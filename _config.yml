@@ -1,9 +1,8 @@
 # Site settings
 title: Phootwork Library
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The phootwork php library fills gaps in the php language and provides
+  better solutions than the existing ones php offers.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: pretty
 excludes: ['README.md']
