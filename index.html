@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+	<h1>Packages</h1>
+	{% for coll in site.collections %}
+		{% if coll.label != 'posts' %}
+		<p>
+			<a href="/{{ coll.label | prepend: site.baseurl }}"><h2>{{ coll.title }}</h2></a>
+			{{coll.description}}
+		</p>
+		{% endif %}
+	{% endfor %}
+</div>

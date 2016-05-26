@@ -1,0 +1,42 @@
+# Site settings
+title: Phootwork Library
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: pretty
+excludes: ['README.md']
+github_username: phootwork
+
+# Build settings
+markdown: kramdown
+#highlighter: pygments
+
+collections:
+  lang:
+    output: true
+    title: "Lang"
+    description: "Missing PHP language constructs"
+    nav:
+      - title: "Overview"
+        path: ""
+      - title: "Installation"
+        path: "installation"
+      - title: "Usage"
+      - title: "Array"
+        path: "array"
+      - title: "String"
+        path: "string"
+      - title: "Comparison"
+        path: "comparison"
+  collection:
+    output: true
+    title: "Collection"
+    description: "PHP Collections library (List, Set, Map, Queue & Stack)"
+    nav:
+      - title: "Overview"
+        path: ""
+      - title: "Installation"
+        path: "installation"
+      - title: "Usage"
