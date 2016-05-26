@@ -11,7 +11,7 @@ title: Collection
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phootwork/collection/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/phootwork/collection/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/phootwork/collection/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/phootwork/collection/?branch=master)
 
-PHP Collections library, which contains ArrayList, Set, Map, Queue & Stack.
+PHP Collections library which contains ArrayList, Set, Map, Queue & Stack.
 
 ## Goals
 
@@ -22,3 +22,7 @@ PHP Collections library, which contains ArrayList, Set, Map, Queue & Stack.
 ## Contact
 
 Report issues at the github [Issue Tracker](https://github.com/phootwork/collection/issues).
+
+## Changelog
+
+Refer to [Releases](https://github.com/phootwork/collection/releases)

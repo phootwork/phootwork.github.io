@@ -23,3 +23,7 @@ Missing PHP language constructs
 ## Contact
 
 Report issues at the github [Issue Tracker](https://github.com/phootwork/lang/issues).
+
+## Changelog
+
+Refer to [Releases](https://github.com/phootwork/lang/releases)
