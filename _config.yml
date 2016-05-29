@@ -47,3 +47,19 @@ collections:
         path: "sorting"
       - title: "Goodies"
         path: "goodies"
+  json:
+    output: true
+    title: "Json"
+    description: "PHP Json library"
+    nav:
+      - title: "Overview"
+        path: ""
+      - title: "Installation"
+        path: "installation"
+      - title: "Usage"
+      - title: "Encode"
+        path: "encode"
+      - title: "Decode"
+        path: "decode"
+      - title: "Error Handling"
+        path: "error-handling"
