@@ -3,13 +3,12 @@ layout: package
 title: Json
 ---
 
-[![License](https://poser.pugx.org/phootwork/json/license)](https://packagist.org/packages/phootwork/json)
-[![Latest Stable Version](https://poser.pugx.org/phootwork/json/v/stable)](https://packagist.org/packages/phootwork/json)
-[![Total Downloads](https://poser.pugx.org/phootwork/json/downloads)](https://packagist.org/packages/phootwork/json)<br>
-[![HHVM Status](http://hhvm.h4cc.de/badge/phootwork/json.svg?style=flat)](http://hhvm.h4cc.de/package/phootwork/json)
-[![Build Status](https://travis-ci.org/phootwork/json.svg?branch=master)](https://travis-ci.org/phootwork/json)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phootwork/json/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/phootwork/json/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/phootwork/json/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/phootwork/json/?branch=master)
+[![License](https://img.shields.io/github/license/phootwork/json.svg?style=flat-square)](https://packagist.org/packages/phootwork/json)
+[![Latest Stable Version](https://img.shields.io/packagist/v/phootwork/json.svg?style=flat-square)](https://packagist.org/packages/phootwork/json)
+[![Total Downloads](https://img.shields.io/packagist/dt/phootwork/json.svg?style=flat-square&colorB=007ec6)](https://packagist.org/packages/phootwork/json)<br>
+[![Build Status](https://img.shields.io/scrutinizer/build/g/phootwork/json.svg?style=flat-square)](https://travis-ci.org/phootwork/json)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/phootwork/json.svg?style=flat-square)](https://scrutinizer-ci.com/g/phootwork/json)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/phootwork/json.svg?style=flat-square)](https://scrutinizer-ci.com/g/phootwork/json)
 
 PHP Json library
 

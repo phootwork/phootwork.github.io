@@ -3,13 +3,12 @@ layout: package
 title: Lang
 ---
 
-[![License](https://poser.pugx.org/phootwork/lang/license)](https://packagist.org/packages/phootwork/lang)
-[![Latest Stable Version](https://poser.pugx.org/phootwork/lang/v/stable)](https://packagist.org/packages/phootwork/lang)
-[![Total Downloads](https://poser.pugx.org/phootwork/lang/downloads)](https://packagist.org/packages/phootwork/lang)<br>
-[![HHVM Status](http://hhvm.h4cc.de/badge/phootwork/lang.svg?style=flat)](http://hhvm.h4cc.de/package/phootwork/lang)
-[![Build Status](https://travis-ci.org/phootwork/lang.svg?branch=master)](https://travis-ci.org/phootwork/lang)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phootwork/lang/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/phootwork/lang/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/phootwork/lang/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/phootwork/lang/?branch=master)
+[![License](https://img.shields.io/github/license/phootwork/lang.svg?style=flat-square)](https://packagist.org/packages/phootwork/lang)
+[![Latest Stable Version](https://img.shields.io/packagist/v/phootwork/lang.svg?style=flat-square)](https://packagist.org/packages/phootwork/lang)
+[![Total Downloads](https://img.shields.io/packagist/dt/phootwork/lang.svg?style=flat-square&colorB=007ec6)](https://packagist.org/packages/phootwork/lang)<br>
+[![Build Status](https://img.shields.io/scrutinizer/build/g/phootwork/lang.svg?style=flat-square)](https://travis-ci.org/phootwork/lang)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/phootwork/lang.svg?style=flat-square)](https://scrutinizer-ci.com/g/phootwork/lang)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/phootwork/lang.svg?style=flat-square)](https://scrutinizer-ci.com/g/phootwork/lang)
 
 Missing PHP language constructs
 
@@ -17,7 +16,7 @@ Missing PHP language constructs
 
 - Provide common but missing php classes
 - Objects for native php constructs
-- Consistend API
+- Consistent API
 - Inspired by `java.lang` and  `java.util`
 
 ## Contact

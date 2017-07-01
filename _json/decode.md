@@ -5,6 +5,12 @@ title: Decode
 
 The `Json::decode()` works almost similarly to php's `json_decode()` except it always returns an array instead of an object.
 
+## Synopsis
+
+```php
+array Json::decode (string $json [, int $options = 0 [, int $depth = 512]])
+```
+
 ## Simple Decoding
 
 Decoding is straight forward:
@@ -16,6 +22,8 @@ use phootwork\json\Json;
 $json = '...';
 $array = Json::decode($json);
 ```
+
+**Note**: Unlike php, this library returns decoded JSON as array!
 
 ## Decode to Collection
 
