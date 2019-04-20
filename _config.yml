@@ -63,3 +63,23 @@ collections:
         path: "decode"
       - title: "Error Handling"
         path: "error-handling"
+  file:
+    output: true
+    title: "File"
+    description: "PHP File library for the local filesystem"
+    nav:
+      - title: "Overview"
+        path: ""
+      - title: "Installation"
+        path: "installation"
+      - title: "Usage"
+      - title: "Paths"
+        path: "paths"
+      - title: "Filesystem"
+        path: "filesystem"
+      - title: "Files"
+        path: "files"
+      - title: "Directories"
+        path: "directories"
+      - title: "Testing"
+        path: "testing"
