@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phootwork\lang\ArrayObject | Phootwork API documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:phootwork_lang_ArrayObject" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Phootwork API documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../phootwork.html">phootwork</a></li><li class="backslash">\</li><li><a href="../../phootwork/lang.html">lang</a></li><li class="backslash">\</li><li>ArrayObject</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ArrayObject
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ArrayObject</strong>        implements
+        <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>, <a target="_blank" href="http://php.net/Countable">Countable</a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>, <a target="_blank" href="http://php.net/Serializable">Serializable</a>, <a href="../../phootwork/lang/Arrayable.html"><abbr title="phootwork\lang\Arrayable">Arrayable</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $contents = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(mixed $element, int|null $index = null)
+        
+                                            <p>Adds an element to that array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAll">addAll</a>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
+        
+                                            <p>Adds all elements to the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(array ...$elements)
+        
+                                            <p>Append one or more elements onto the end of array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Resets the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contains">contains</a>(mixed $element)
+        
+                                            <p>Checks whether the given element is in this array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Counts the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_each">each</a>(callable $callback)
+        
+                                            <p>Iterates the array and calls the callback function with the current item as parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_every">every</a>(callable $callback)
+        
+                                            <p>Tests whether all elements in the array pass the test implemented by the provided function.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>(callable $callback)
+        
+                                            <p>Filters elements of an array using a callback function</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>()
+        
+                                            <p>Searches the array with a given callback and returns the first element if found.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAll">findAll</a>()
+        
+                                            <p>Searches the array with a given callback and returns all matching elements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findIndex">findIndex</a>()
+        
+                                            <p>Searches the array with a given callback and returns the index for the first element if found.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findLast">findLast</a>()
+        
+                                            <p>Searches the array with a given callback and returns the last element if found.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findLastIndex">findLastIndex</a>()
+        
+                                            <p>Searches the array with a given callback and returns the index for the last element if found.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flip">flip</a>()
+        
+                                            <p>Flips keys and values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(int $index)
+        
+                                            <p>Returns the element at the given index (or null if the index isn't present)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_indexOf">indexOf</a>(mixed $element)
+        
+                                            <p>Returns the index of the given element or false if the element can't be found</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEmpty">isEmpty</a>()
+        
+                                            <p>Checks whether this array is empty</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/Text.html"><abbr title="phootwork\lang\Text">Text</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_join">join</a>(string $glue = &#039;&#039;)
+        
+                                            <p>Joins the array with a string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_keys">keys</a>()
+        
+                                            <p>Returns the keys of the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_map">map</a>(callable $callback)
+        
+                                            <p>Applies the callback to the elements of the given arrays</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>()
+        
+                                            <p>Merges in other values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>($offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>($offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>($offset, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>($offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pop">pop</a>()
+        
+                                            <p>Pop the element off the end of array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepend">prepend</a>(array ...$elements)
+        
+                                            <p>Prepend one or more elements to the beginning of the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reduce">reduce</a>(callable $callback, mixed $initial = null)
+        
+                                            <p>Iteratively reduce the array to a single value using a callback function</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(mixed $element)
+        
+                                            <p>Removes an element from the list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeAll">removeAll</a>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
+        
+                                            <p>Removes all elements from the list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reverse">reverse</a>()
+        
+                                            <p>Reverses the order of all elements</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_search">search</a>()
+        
+                                            <p>Searches the array for query using the callback function on each element</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serialize">serialize</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shift">shift</a>()
+        
+                                            <p>Shift an element off the beginning of array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_slice">slice</a>(int $offset, int|null $length = null, bool $preserveKeys = false)
+        
+                                            <p>Extract a slice of the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_some">some</a>(callable $callback)
+        
+                                            <p>Tests whether at least one element in the array passes the test implemented by the provided function.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sort">sort</a>(<a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable $cmp = null)
+        
+                                            <p>Sorts the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortAssoc">sortAssoc</a>(<a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable $cmp = null)
+        
+                                            <p>Sorts the array and persisting key-value pairs</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortKeys">sortKeys</a>(<a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable $cmp = null)
+        
+                                            <p>Sorts the array by keys</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_splice">splice</a>(int $offset, int|null $length = null, array $replacement = [])
+        
+                                            <p>Remove a portion of the array and replace it with something else</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Returns the php array type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unserialize">unserialize</a>($serialized)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_values">values</a>()
+        
+                                            <p>Returns the values of the array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         line 22</div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 18</div>
+        <code>                    
+    <strong>__construct</strong>(array $contents = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at         line 101</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>add</strong>(mixed $element, int|null $index = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds an element to that array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAll">
+        <div class="location">at         line 117</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>addAll</strong>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds all elements to the array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">at         line 85</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>append</strong>(array ...$elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Append one or more elements onto the end of array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at         line 59</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resets the array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contains">
+        <div class="location">at         line 535</div>
+        <code>                    bool
+    <strong>contains</strong>(mixed $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether the given element is in this array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at         line 31</div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Counts the array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>the amount of items</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_each">
+        <div class="location">at         line 609</div>
+        <code>                    void
+    <strong>each</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Iterates the array and calls the callback function with the current item as parameter</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_every">
+        <div class="location">at         line 294</div>
+        <code>                    bool
+    <strong>every</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests whether all elements in the array pass the test implemented by the provided function.</p>                    <p>Returns <code>true</code> for an empty array.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at         line 586</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>filter</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters elements of an array using a callback function</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>The callback function to use
+        If no callback is supplied, all entries of array equal to false will be removed.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at         line 378</div>
+        <code>                    mixed|null
+    <strong>find</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches the array with a given callback and returns the first element if found.</p>                    <p>The callback function takes one or two parameters:</p>
+
+<pre><code>function ($element [, $query]) {}
+</code></pre>
+
+<p>The callback must return a boolean</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td>the found element or null if it hasn't been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAll">
+        <div class="location">at         line 443</div>
+        <code>                    mixed|null
+    <strong>findAll</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches the array with a given callback and returns all matching elements.</p>                    <p>The callback function takes one or two parameters:</p>
+
+<pre><code>function ($element [, $query]) {}
+</code></pre>
+
+<p>The callback must return a boolean</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td>the found element or null if it hasn't been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findIndex">
+        <div class="location">at         line 488</div>
+        <code>                    int|null
+    <strong>findIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches the array with a given callback and returns the index for the first element if found.</p>                    <p>The callback function takes one or two parameters:</p>
+
+<pre><code>function ($element [, $query]) {}
+</code></pre>
+
+<p>The callback must return a boolean</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td>the index or null if it hasn't been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findLast">
+        <div class="location">at         line 410</div>
+        <code>                    mixed|null
+    <strong>findLast</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches the array with a given callback and returns the last element if found.</p>                    <p>The callback function takes one or two parameters:</p>
+
+<pre><code>function ($element [, $query]) {}
+</code></pre>
+
+<p>The callback must return a boolean</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td>the found element or null if it hasn't been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findLastIndex">
+        <div class="location">at         line 515</div>
+        <code>                    int|null
+    <strong>findLastIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches the array with a given callback and returns the index for the last element if found.</p>                    <p>The callback function takes one or two parameters:</p>
+
+<pre><code>function ($element [, $query]) {}
+</code></pre>
+
+<p>The callback must return a boolean</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td>the index or null if it hasn't been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flip">
+        <div class="location">at         line 649</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>flip</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flips keys and values</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td>$this</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 357</div>
+        <code>                    mixed
+    <strong>get</strong>(int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the element at the given index (or null if the index isn't present)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at         line 35</div>
+        <code>                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_indexOf">
+        <div class="location">at         line 469</div>
+        <code>                    int|null
+    <strong>indexOf</strong>(mixed $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the index of the given element or false if the element can't be found</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td>the index for the given element</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEmpty">
+        <div class="location">at         line 69</div>
+        <code>                    bool
+    <strong>isEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether this array is empty</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_join">
+        <div class="location">at         line 553</div>
+        <code>                    <a href="../../phootwork/lang/Text.html"><abbr title="phootwork\lang\Text">Text</abbr></a>
+    <strong>join</strong>(string $glue = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Joins the array with a string</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td>Defaults to an empty string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/Text.html"><abbr title="phootwork\lang\Text">Text</abbr></a></td>
+            <td>Returns a string containing a string representation of all the array elements in the
+        same order, with the glue string between each element.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_keys">
+        <div class="location">at         line 631</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>keys</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the keys of the array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td>the keys</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_map">
+        <div class="location">at         line 575</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>map</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Applies the callback to the elements of the given arrays</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callback function to run for each element in each array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">at         line 621</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>merge</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges in other values</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td>$this</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at         line 681</div>
+        <code>                    
+    <strong>offsetExists</strong>($offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at         line 695</div>
+        <code>                    
+    <strong>offsetGet</strong>($offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at         line 672</div>
+        <code>                    
+    <strong>offsetSet</strong>($offset, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at         line 688</div>
+        <code>                    
+    <strong>offsetUnset</strong>($offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pop">
+        <div class="location">at         line 130</div>
+        <code>                    mixed
+    <strong>pop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pop the element off the end of array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>the popped element</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepend">
+        <div class="location">at         line 140</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>prepend</strong>(array ...$elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepend one or more elements to the beginning of the array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reduce">
+        <div class="location">at         line 600</div>
+        <code>                    mixed
+    <strong>reduce</strong>(callable $callback, mixed $initial = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Iteratively reduce the array to a single value using a callback function</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>callback function
+        <code>mixed callback (mixed $carry , mixed $item)</code>
+        $carry - Holds the return value of the previous iteration; in the case of the first iteration it instead holds the value of initial.
+        $item - Holds the value of the current iteration.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$initial</td>
+                <td>If the optional initial is available, it will be used at the beginning of the process, or as a final result in case the array is empty.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at         line 163</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>remove</strong>(mixed $element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes an element from the list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeAll">
+        <div class="location">at         line 178</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>removeAll</strong>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes all elements from the list</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reverse">
+        <div class="location">at         line 275</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>reverse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reverses the order of all elements</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location">at         line 333</div>
+        <code>                    bool
+    <strong>search</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches the array for query using the callback function on each element</p>                    <p>The callback function takes one or two parameters:</p>
+
+<pre><code>function ($element [, $query]) {}
+</code></pre>
+
+<p>The callback must return a boolean</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serialize">
+        <div class="location">at         line 39</div>
+        <code>                    string
+    <strong>serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shift">
+        <div class="location">at         line 153</div>
+        <code>                    mixed
+    <strong>shift</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Shift an element off the beginning of array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>the shifted element</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_slice">
+        <div class="location">at         line 565</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>slice</strong>(int $offset, int|null $length = null, bool $preserveKeys = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Extract a slice of the array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$preserveKeys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_some">
+        <div class="location">at         line 311</div>
+        <code>                    bool
+    <strong>some</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tests whether at least one element in the array passes the test implemented by the provided function.</p>                    <p>Returns <code>false</code> for an empty array.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sort">
+        <div class="location">at         line 212</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>sort</strong>(<a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable $cmp = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sorts the array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable</td>
+                <td>$cmp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortAssoc">
+        <div class="location">at         line 224</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>sortAssoc</strong>(<a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable $cmp = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sorts the array and persisting key-value pairs</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable</td>
+                <td>$cmp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortKeys">
+        <div class="location">at         line 236</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>sortKeys</strong>(<a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable $cmp = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sorts the array by keys</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../phootwork/lang/Comparator.html"><abbr title="phootwork\lang\Comparator">Comparator</abbr></a>|callable</td>
+                <td>$cmp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_splice">
+        <div class="location">at         line 194</div>
+        <code>                    $this
+    <strong>splice</strong>(int $offset, int|null $length = null, array $replacement = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove a portion of the array and replace it with something else</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>If offset is positive then the start of removed portion is at that offset from the beginning of the input array. If offset is negative then it starts that far from the end of the input array.</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$length</td>
+                <td>If length is omitted, removes everything from offset to the end of the array. If length is specified and is positive, then that many elements will be removed. If length is specified and is negative then the end of the removed portion will be that many elements from the end of the array. If length is specified and is zero, no elements will be removed.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$replacement</td>
+                <td>If replacement array is specified, then the removed elements are replaced with elements from this array. If offset and length are such that nothing is removed, then the elements from the replacement array are inserted in the place specified by the offset. Note that keys in replacement array are not preserved. If replacement is just one element it is not necessary to put array() around it, unless the element is an array itself, an object or NULL.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at         line 659</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the php array type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unserialize">
+        <div class="location">at         line 48</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>unserialize</strong>($serialized)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$serialized</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_values">
+        <div class="location">at         line 640</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>values</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the values of the array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td>the values</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

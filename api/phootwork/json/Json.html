@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phootwork\json\Json | Phootwork API documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:phootwork_json_Json" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Phootwork API documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../phootwork.html">phootwork</a></li><li class="backslash">\</li><li><a href="../../phootwork/json.html">json</a></li><li class="backslash">\</li><li>Json</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Json
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Json</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>BIGINT_AS_STRING</td>
+                <td class="last">
+                    <p><em>Encodes large integers as their original string value.</em></p>
+                    <p>Available since PHP 5.4.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_CTRL_CHAR</td>
+                <td class="last">
+                    <p><em>Control character error, possibly incorrectly encoded.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_DEPTH</td>
+                <td class="last">
+                    <p><em>The maximum stack depth has been exceeded.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_INF_OR_NAN</td>
+                <td class="last">
+                    <p><em>The value passed to json_encode() includes either NAN or INF. If the constant
+PARTIAL_OUTPUT_ON_ERROR option was given, 0 will be encoded in the place of
+these special numbers.</em></p>
+                    <p>This constant is available as of PHP 5.5.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_NONE</td>
+                <td class="last">
+                    <p><em>No error has occurred.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_RECURSION</td>
+                <td class="last">
+                    <p><em>The object or array passed to json_encode() include recursive references and
+cannot be encoded. If the constant PARTIAL_OUTPUT_ON_ERROR option was given, NULL
+will be encoded in the place of the recursive reference.</em></p>
+                    <p>This constant is available as of PHP 5.5.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_STATE_MISMATCH</td>
+                <td class="last">
+                    <p><em>Occurs with underflow or with the modes mismatch.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_SYNTAX</td>
+                <td class="last">
+                    <p><em>Syntax error. Available since PHP 5.3.0.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_UNSUPPORTED_TYPE</td>
+                <td class="last">
+                    <p><em>A value of an unsupported type was given to json_encode(), such as a resource. If the
+constant PARTIAL_OUTPUT_ON_ERROR option was given, NULL will be encoded in the place
+of the unsupported value.</em></p>
+                    <p>This constant is available as of PHP 5.5.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ERROR_UTF8</td>
+                <td class="last">
+                    <p><em>Malformed UTF-8 characters, possibly incorrectly encoded.</em></p>
+                    <p>This constant is available as of PHP 5.3.3.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FORCE_OBJECT</td>
+                <td class="last">
+                    <p><em>Outputs an object rather than an array when a non-associative array is used.</em></p>
+                    <p>Especially useful when the recipient of the output is expecting an object and the
+array is empty.</p>
+
+<p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEX_AMP</td>
+                <td class="last">
+                    <p><em>All &amp;s are converted to \u0026.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEX_APOS</td>
+                <td class="last">
+                    <p><em>All ' are converted to \u0027.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEX_QUOT</td>
+                <td class="last">
+                    <p><em>All " are converted to \u0022.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEX_TAG</td>
+                <td class="last">
+                    <p><em>All &lt; and > are converted to \u003C and \u003E.</em></p>
+                    <p>Available since PHP 5.3.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NUMERIC_CHECK</td>
+                <td class="last">
+                    <p><em>Encodes numeric strings as numbers. Available since PHP 5.3.3.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OBJECT_AS_ARRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PARTIAL_OUTPUT_ON_ERROR</td>
+                <td class="last">
+                    <p><em>Available since PHP 5.5.0</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PRETTY_PRINT</td>
+                <td class="last">
+                    <p><em>Use whitespace in returned data to format it.</em></p>
+                    <p>Available since PHP 5.4.0.</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UNESCAPED_SLASHES</td>
+                <td class="last">
+                    <p><em>Don't escape /. Available since PHP 5.4.0.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UNESCAPED_UNICODE</td>
+                <td class="last">
+                    <p><em>Encode multibyte Unicode characters literally (default is to escape
+as \uXXXX).</em></p>
+                    <p>Available since PHP 5.4.0.</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_decode">decode</a>(string $json, int $options = 0, int $depth = 512)
+        
+                                            <p>Decodes a JSON string to an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_encode">encode</a>(mixed $data, int $options = 0, int $depth = 512)
+        
+                                            <p>Returns the JSON representation of a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../phootwork/collection/Collection.html"><abbr title="phootwork\collection\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toCollection">toCollection</a>(string $json)
+        
+                                            <p>Returns a collection (list or map) of the provided json</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../phootwork/collection/ArrayList.html"><abbr title="phootwork\collection\ArrayList">ArrayList</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toList">toList</a>(string $json)
+        
+                                            <p>Returns a list collection of the provided json</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../phootwork/collection/Map.html"><abbr title="phootwork\collection\Map">Map</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toMap">toMap</a>(string $json)
+        
+                                            <p>Returns a map collection of the provided json</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_decode">
+        <div class="location">at         line 232</div>
+        <code>        static            array
+    <strong>decode</strong>(string $json, int $options = 0, int $depth = 512)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Decodes a JSON string to an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$json</td>
+                <td>The json string being decoded. This only works with UTF-8 encoded strings.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$options</td>
+                <td>Bitmask of JSON decode options. Currently only OBJECT_AS_ARRAY, BIGINT_AS_STRING is supported (default is to cast large integers as floats)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$depth</td>
+                <td>User specified recursion depth.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Returns the value encoded in json in appropriate PHP type. Values true, false and null are returned as TRUE, FALSE and NULL respectively.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../phootwork/json/JsonException.html"><abbr title="phootwork\json\JsonException">JsonException</abbr></a></td>
+                <td>if something gone wrong</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encode">
+        <div class="location">at         line 215</div>
+        <code>        static            string
+    <strong>encode</strong>(mixed $data, int $options = 0, int $depth = 512)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the JSON representation of a value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The value being encoded. Can be any type except a resource. All string data must be UTF-8 encoded.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$options</td>
+                <td>Bitmask consisting of HEX_TAG, HEX_AMP, HEX_APOS, HEX_QUOT, FORCE_OBJECT, NUMERIC_CHECK, UNESCAPED_SLASHES, PRETTY_PRINT, UNESCAPED_UNICODE, PARTIAL_OUTPUT_ON_ERROR.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$depth</td>
+                <td>Set the maximum depth. Must be greater than zero. (PHP 5.5 only!)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Returns a JSON encoded string</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../phootwork/json/JsonException.html"><abbr title="phootwork\json\JsonException">JsonException</abbr></a></td>
+                <td>if something gone wrong</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toCollection">
+        <div class="location">at         line 265</div>
+        <code>        static            <a href="../../phootwork/collection/Collection.html"><abbr title="phootwork\collection\Collection">Collection</abbr></a>
+    <strong>toCollection</strong>(string $json)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a collection (list or map) of the provided json</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$json</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/collection/Collection.html"><abbr title="phootwork\collection\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toList">
+        <div class="location">at         line 255</div>
+        <code>        static            <a href="../../phootwork/collection/ArrayList.html"><abbr title="phootwork\collection\ArrayList">ArrayList</abbr></a>
+    <strong>toList</strong>(string $json)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a list collection of the provided json</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$json</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/collection/ArrayList.html"><abbr title="phootwork\collection\ArrayList">ArrayList</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toMap">
+        <div class="location">at         line 245</div>
+        <code>        static            <a href="../../phootwork/collection/Map.html"><abbr title="phootwork\collection\Map">Map</abbr></a>
+    <strong>toMap</strong>(string $json)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a map collection of the provided json</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$json</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/collection/Map.html"><abbr title="phootwork\collection\Map">Map</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
