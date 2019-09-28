@@ -302,13 +302,14 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed|null
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_find">find</a>(array ...$arguments)
+                    <a href="#method_find">find</a>(...$arguments)
         
-                                            <p>Searches the array with a given callback and returns the first element if found.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/AbstractArray.html#method_find"><abbr title="phootwork\lang\AbstractArray">AbstractArray</abbr></a></small></div>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/IndexFindersPart.html#method_find"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -332,13 +333,14 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed|null
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_findLast">findLast</a>(array ...$arguments)
+                    <a href="#method_findLast">findLast</a>(...$arguments)
         
-                                            <p>Searches the array with a given callback and returns the last element if found.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/AbstractArray.html#method_findLast"><abbr title="phootwork\lang\AbstractArray">AbstractArray</abbr></a></small></div>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findLast"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -436,9 +438,19 @@
                     <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_merge">merge</a>()
+                    <a href="#method_merge">merge</a>(mixed ...$toMerge)
         
                                             <p>Merges in other values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeRecursive">mergeRecursive</a>(mixed ...$toMerge)
+        
+                                            <p>Merges in other values, recursively</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1080,49 +1092,27 @@ signature: mixed callback(mixed $carry, mixed $item)</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_find">
-        <div class="location">in <a href="../../phootwork/lang/AbstractArray.html#method_find"><abbr title="phootwork\lang\AbstractArray">AbstractArray</abbr></a> at         line 85</div>
-        <code>                    mixed|null
-    <strong>find</strong>(array ...$arguments)
+        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_find"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 13</div>
+        <code>    abstract                
+    <strong>find</strong>(...$arguments)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Searches the array with a given callback and returns the first element if found.</p>                    <p>The callback function takes one or two parameters:</p>
-
-<pre><code>function ($element [, $query]) {}
-</code></pre>
-
-<p>The callback must return a boolean
-When it's passed, $query must be the first argument:</p>
-
-<pre><code>- find($query, callback)
-- find(callback)
-</code></pre>
-</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td></td>
                 <td>...$arguments</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed|null</td>
-            <td>the found element or null if it hasn't been found</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1182,7 +1172,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_findIndex">
-        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findIndex"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 68</div>
+        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findIndex"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 71</div>
         <code>                    int|null
     <strong>findIndex</strong>(array ...$arguments)
         </code>
@@ -1233,49 +1223,27 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_findLast">
-        <div class="location">in <a href="../../phootwork/lang/AbstractArray.html#method_findLast"><abbr title="phootwork\lang\AbstractArray">AbstractArray</abbr></a> at         line 114</div>
-        <code>                    mixed|null
-    <strong>findLast</strong>(array ...$arguments)
+        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findLast"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 15</div>
+        <code>    abstract                
+    <strong>findLast</strong>(...$arguments)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Searches the array with a given callback and returns the last element if found.</p>                    <p>The callback function takes one or two parameters:</p>
-
-<pre><code>function ($element [, $query]) {}
-</code></pre>
-
-<p>The callback must return a boolean
-When it's passed, $query must be the first argument:</p>
-
-<pre><code>- find($query, callback)
-- find(callback)
-</code></pre>
-</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td></td>
                 <td>...$arguments</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed|null</td>
-            <td>the found element or null if it hasn't been found</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1284,7 +1252,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_findLastIndex">
-        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findLastIndex"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 44</div>
+        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findLastIndex"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 47</div>
         <code>                    int|null
     <strong>findLastIndex</strong>(array ...$arguments)
         </code>
@@ -1335,7 +1303,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_flip">
-        <div class="location">at         line 200</div>
+        <div class="location">at         line 213</div>
         <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
     <strong>flip</strong>()
         </code>
@@ -1433,7 +1401,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_indexOf">
-        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_indexOf"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 21</div>
+        <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_indexOf"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 24</div>
         <code>                    int|null
     <strong>indexOf</strong>(mixed $element)
         </code>
@@ -1544,7 +1512,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_keys">
-        <div class="location">at         line 182</div>
+        <div class="location">at         line 195</div>
         <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
     <strong>keys</strong>()
         </code>
@@ -1616,7 +1584,7 @@ When it's passed, $query must be the first argument:</p>
                     <h3 id="method_merge">
         <div class="location">at         line 171</div>
         <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
-    <strong>merge</strong>()
+    <strong>merge</strong>(mixed ...$toMerge)
         </code>
     </h3>
     <div class="details">
@@ -1626,6 +1594,56 @@ When it's passed, $query must be the first argument:</p>
                     <div class="method-description">
                                     <p>Merges in other values</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$toMerge</td>
+                <td>Variable list of arrays to merge.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a></td>
+            <td>$this</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeRecursive">
+        <div class="location">at         line 184</div>
+        <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
+    <strong>mergeRecursive</strong>(mixed ...$toMerge)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges in other values, recursively</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>...$toMerge</td>
+                <td>Variable list of arrays to merge.</td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -1644,7 +1662,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetExists">
-        <div class="location">at         line 224</div>
+        <div class="location">at         line 237</div>
         <code>                    
     <strong>offsetExists</strong>($offset)
         </code>
@@ -1673,7 +1691,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetGet">
-        <div class="location">at         line 238</div>
+        <div class="location">at         line 251</div>
         <code>                    
     <strong>offsetGet</strong>($offset)
         </code>
@@ -1702,7 +1720,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetSet">
-        <div class="location">at         line 215</div>
+        <div class="location">at         line 228</div>
         <code>                    
     <strong>offsetSet</strong>($offset, $value)
         </code>
@@ -1736,7 +1754,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_offsetUnset">
-        <div class="location">at         line 231</div>
+        <div class="location">at         line 244</div>
         <code>                    
     <strong>offsetUnset</strong>($offset)
         </code>
@@ -2459,7 +2477,7 @@ When it's passed, $query must be the first argument:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_values">
-        <div class="location">at         line 191</div>
+        <div class="location">at         line 204</div>
         <code>                    <a href="../../phootwork/lang/ArrayObject.html"><abbr title="phootwork\lang\ArrayObject">ArrayObject</abbr></a>
     <strong>values</strong>()
         </code>
