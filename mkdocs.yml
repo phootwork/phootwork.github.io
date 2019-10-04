@@ -1,0 +1,19 @@
+site_name: Phootwork
+theme: cinder
+copyright: "Phootwork is licensed under the <a href='https://github.com/phootwork/phootwork/blob/master/LICENSE'>MIT license</a>"
+markdown_extensions:
+  - admonition
+nav:
+  - Home: index.md
+  - Libraries:
+    - Collection: collection.md
+    - File: file.md
+    - Json: json.md
+    - Lang: lang.md
+    - Tokenizer: tokenizer.md
+    - Xml: xml.md
+  - Api: api/index.html
+  - About:
+      - About us: about.md
+      - Contributing: contributing.md
+      - License: license.md

@@ -1,3 +1,11 @@
+## License
+
+Phootwork libraries are released under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+The following disclaimer is shipped with all the libraries into the `LICENSE` file.
+
+### License disclaimer
+
+
 The MIT License (MIT)
 
 Copyright (c) 2015 - 2019 Thomas Gossmann
