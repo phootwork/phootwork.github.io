@@ -102,15 +102,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../phootwork/lang/parts/AddAllPart.html"><abbr title="phootwork\lang\parts\AddAllPart">AddAllPart</abbr></a>
-                                            
-                </div>
-                <div class="col-md-6">
-                    
-                </div>
-            </div>
-                    <div class="row">
-                <div class="col-md-6">
                                             <a href="../../phootwork/lang/parts/AddPart.html"><abbr title="phootwork\lang\parts\AddPart">AddPart</abbr></a>
                                             
                 </div>
@@ -130,6 +121,15 @@
                     <div class="row">
                 <div class="col-md-6">
                                             <a href="../../phootwork/lang/parts/IndexFindersPart.html"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../phootwork/lang/parts/InsertPart.html"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a>
                                             
                 </div>
                 <div class="col-md-6">
@@ -212,23 +212,14 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../phootwork/lang/parts/AddPart.html"><abbr title="phootwork\lang\parts\AddPart">AddPart</abbr></a>
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_add">add</a>(mixed $element, int|null $index = null)
+                    <a href="#method_add">add</a>(...$elements)
         
-                                            <p>Adds an element to that array</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/AddPart.html#method_add"><abbr title="phootwork\lang\parts\AddPart">AddPart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../phootwork/lang/parts/AddAllPart.html"><abbr title="phootwork\lang\parts\AddAllPart">AddAllPart</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_addAll">addAll</a>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
-        
-                                            <p>Adds all elements to the array</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/AddAllPart.html#method_addAll"><abbr title="phootwork\lang\parts\AddAllPart">AddAllPart</abbr></a></small></div>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/InsertPart.html#method_add"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -323,7 +314,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int|null
+                    int|string|null
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_findIndex">findIndex</a>(array ...$arguments)
@@ -344,7 +335,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int|null
+                    int|string|null
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_findLastIndex">findLastIndex</a>(array ...$arguments)
@@ -367,7 +358,7 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_get">get</a>(int $index)
+                    <a href="#method_get">get</a>(mixed $index)
         
                                             <p>Returns the element at the given index (or null if the index isn't present)</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/AccessorsPart.html#method_get"><abbr title="phootwork\lang\parts\AccessorsPart">AccessorsPart</abbr></a></small></div>
@@ -385,13 +376,23 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int|null
+                    int|string|null
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_indexOf">indexOf</a>(mixed $element)
         
-                                            <p>Returns the index of the given element or false if the element can't be found</p>                </div>
+                                            <p>Returns the index of the given element or null if the element can't be found</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/IndexFindersPart.html#method_indexOf"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../phootwork/lang/parts/InsertPart.html"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(mixed $element, int|null|string $index)
+        
+                                            <p>Insert one element at the given index</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/InsertPart.html#method_insert"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -534,20 +535,10 @@ signature: mixed callback(mixed $carry, mixed $item)</p>                </div>
                     <a href="../../phootwork/lang/parts/RemovePart.html"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_remove">remove</a>(mixed $element)
+                    <a href="#method_remove">remove</a>(mixed ...$elements)
         
-                                            <p>Removes an element from the array</p>                </div>
+                                            <p>Removes one or more elements from the array</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/RemovePart.html#method_remove"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../phootwork/lang/parts/RemovePart.html"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_removeAll">removeAll</a>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
-        
-                                            <p>Removes all elements from the array</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../phootwork/lang/parts/RemovePart.html#method_removeAll"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -747,83 +738,27 @@ signature: mixed callback(mixed $carry, mixed $item)</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">in <a href="../../phootwork/lang/parts/AddPart.html#method_add"><abbr title="phootwork\lang\parts\AddPart">AddPart</abbr></a> at         line 21</div>
-        <code>                    <a href="../../phootwork/lang/parts/AddPart.html"><abbr title="phootwork\lang\parts\AddPart">AddPart</abbr></a>
-    <strong>add</strong>(mixed $element, int|null $index = null)
+        <div class="location">in <a href="../../phootwork/lang/parts/InsertPart.html#method_add"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a> at         line 13</div>
+        <code>    abstract                
+    <strong>add</strong>(...$elements)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Adds an element to that array</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
-                <td>$element</td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td>int|null</td>
-                <td>$index</td>
+                <td>...$elements</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../phootwork/lang/parts/AddPart.html"><abbr title="phootwork\lang\parts\AddPart">AddPart</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_addAll">
-        <div class="location">in <a href="../../phootwork/lang/parts/AddAllPart.html#method_addAll"><abbr title="phootwork\lang\parts\AddAllPart">AddAllPart</abbr></a> at         line 22</div>
-        <code>                    <a href="../../phootwork/lang/parts/AddAllPart.html"><abbr title="phootwork\lang\parts\AddAllPart">AddAllPart</abbr></a>
-    <strong>addAll</strong>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Adds all elements to the array</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array|<a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
-                <td>$array</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../phootwork/lang/parts/AddAllPart.html"><abbr title="phootwork\lang\parts\AddAllPart">AddAllPart</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1173,7 +1108,7 @@ When it's passed, $query must be the first argument:</p>
                     <div class="method-item">
                     <h3 id="method_findIndex">
         <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findIndex"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 71</div>
-        <code>                    int|null
+        <code>                    int|string|null
     <strong>findIndex</strong>(array ...$arguments)
         </code>
     </h3>
@@ -1210,7 +1145,7 @@ When it's passed, $query must be the first argument:</p>
 
                     <table class="table table-condensed">
         <tr>
-            <td>int|null</td>
+            <td>int|string|null</td>
             <td>the index or null if it hasn't been found</td>
         </tr>
     </table>
@@ -1253,7 +1188,7 @@ When it's passed, $query must be the first argument:</p>
                     <div class="method-item">
                     <h3 id="method_findLastIndex">
         <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_findLastIndex"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 47</div>
-        <code>                    int|null
+        <code>                    int|string|null
     <strong>findLastIndex</strong>(array ...$arguments)
         </code>
     </h3>
@@ -1290,7 +1225,7 @@ When it's passed, $query must be the first argument:</p>
 
                     <table class="table table-condensed">
         <tr>
-            <td>int|null</td>
+            <td>int|string|null</td>
             <td>the index or null if it hasn't been found</td>
         </tr>
     </table>
@@ -1335,7 +1270,7 @@ When it's passed, $query must be the first argument:</p>
                     <h3 id="method_get">
         <div class="location">in <a href="../../phootwork/lang/parts/AccessorsPart.html#method_get"><abbr title="phootwork\lang\parts\AccessorsPart">AccessorsPart</abbr></a> at         line 21</div>
         <code>                    mixed
-    <strong>get</strong>(int $index)
+    <strong>get</strong>(mixed $index)
         </code>
     </h3>
     <div class="details">
@@ -1349,7 +1284,7 @@ When it's passed, $query must be the first argument:</p>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int</td>
+                <td>mixed</td>
                 <td>$index</td>
                 <td></td>
             </tr>
@@ -1402,7 +1337,7 @@ When it's passed, $query must be the first argument:</p>
                     <div class="method-item">
                     <h3 id="method_indexOf">
         <div class="location">in <a href="../../phootwork/lang/parts/IndexFindersPart.html#method_indexOf"><abbr title="phootwork\lang\parts\IndexFindersPart">IndexFindersPart</abbr></a> at         line 24</div>
-        <code>                    int|null
+        <code>                    int|string|null
     <strong>indexOf</strong>(mixed $element)
         </code>
     </h3>
@@ -1411,7 +1346,7 @@ When it's passed, $query must be the first argument:</p>
     
 
                     <div class="method-description">
-                                    <p>Returns the index of the given element or false if the element can't be found</p>                                                </div>
+                                    <p>Returns the index of the given element or null if the element can't be found</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1428,8 +1363,53 @@ When it's passed, $query must be the first argument:</p>
 
                     <table class="table table-condensed">
         <tr>
-            <td>int|null</td>
+            <td>int|string|null</td>
             <td>the index for the given element</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">in <a href="../../phootwork/lang/parts/InsertPart.html#method_insert"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a> at         line 23</div>
+        <code>                    <a href="../../phootwork/lang/parts/InsertPart.html"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a>
+    <strong>insert</strong>(mixed $element, int|null|string $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Insert one element at the given index</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null|string</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../phootwork/lang/parts/InsertPart.html"><abbr title="phootwork\lang\parts\InsertPart">InsertPart</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
@@ -1902,7 +1882,7 @@ signature: mixed callback(mixed $carry, mixed $item)</p>                        
                     <h3 id="method_remove">
         <div class="location">in <a href="../../phootwork/lang/parts/RemovePart.html#method_remove"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a> at         line 20</div>
         <code>                    <a href="../../phootwork/lang/parts/RemovePart.html"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a>
-    <strong>remove</strong>(mixed $element)
+    <strong>remove</strong>(mixed ...$elements)
         </code>
     </h3>
     <div class="details">
@@ -1910,54 +1890,14 @@ signature: mixed callback(mixed $carry, mixed $item)</p>                        
     
 
                     <div class="method-description">
-                                    <p>Removes an element from the array</p>                                                </div>
+                                    <p>Removes one or more elements from the array</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>mixed</td>
-                <td>$element</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../phootwork/lang/parts/RemovePart.html"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_removeAll">
-        <div class="location">in <a href="../../phootwork/lang/parts/RemovePart.html#method_removeAll"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a> at         line 36</div>
-        <code>                    <a href="../../phootwork/lang/parts/RemovePart.html"><abbr title="phootwork\lang\parts\RemovePart">RemovePart</abbr></a>
-    <strong>removeAll</strong>(array|<a target="_blank" href="http://php.net/Iterator">Iterator</a> $array)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Removes all elements from the array</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array|<a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
-                <td>$array</td>
+                <td>...$elements</td>
                 <td></td>
             </tr>
             </table>
