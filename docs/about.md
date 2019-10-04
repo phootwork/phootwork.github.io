@@ -1,11 +1,7 @@
----
-layout: page
-title: About
----
+## Who's Behind Phootwork?
 
-The phootwork php library fills gaps in the php language and provides better solutions than the existing ones php offers.
-
-Phootwork is created by <a href="https://github.com/gossi">gossi</a>.
+Phootwork is created by [gossi](https://github.com/gossi) and maintained by himself
+and other [contributors](https://github.com/phootwork/phootwork/graphs/contributors).
 
 ## The name Phootwork
 
@@ -22,4 +18,8 @@ The API is still in development; breaking changes can happen.
 For PHP versions `>= 5.6`.
 
 **Version 2.***<br>
-For PHP versions `>= 7.1`.
+For PHP versions `>= 7.2`.
+
+## Release notes
+
+Please, see [Github releses](https://github.com/phootwork/phootwork/releases)
