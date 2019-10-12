@@ -4,7 +4,7 @@
 The time passed, the versions increased and PHP 5 and PHP 7 arrived, with their brand new object oriented heart.
 Anyway, those functions are still there and new PHP versions don't offer alternatives.
 
-Phootwork is a collection of php libraries which fill these gaps in the php language and provides consistent object oriented solutions
+[Phootwork :fab fa-github:](https://github.com/phootwork/phootwork) is a collection of php libraries which fill these gaps in the php language and provides consistent object oriented solutions
 where the language natively offers only functions.
 
 The phootwork package includes:
@@ -99,3 +99,6 @@ $stack->size(); // 5
 $stack->pop(); // 'Chewbecca'
 $stack->size(); // 4: pop() removes the popped element
 ```
+<hr>
+<a class="btn btn-info btn-lg" href="https://github.com/phootwork/phootwork/issues"><i class="fab fa-github"></i><b> Any issue?</b></a>
+<a class="btn btn-info btn-lg" href="https://github.com/phootwork/phootwork.github.io/issues"><i class="fas fa-keyboard"></i><b> Found a typo?</b></a>
