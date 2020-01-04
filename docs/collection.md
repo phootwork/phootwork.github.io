@@ -83,7 +83,7 @@ $fruits->contains('pear'); // (bool) true
 // Much more into the api documentation
 ```
 
-### Addiction
+### Addition
 
 You can add one or more elements to the *ArrayList* via the [add()](api/phootwork/collection/ArrayList.html#method_add) method:
 
@@ -117,7 +117,7 @@ $fruits->toArray(); // ['apple', 'banana', 'pear', 'peach']
 The insertion of an element, at a given position, moves the next elements of one position.
 
 !!! warning
-    If your *ArrayList* models an **associative array** (the indexes are strings) the insertion **overwrite** the element
+    If your *ArrayList* models an **associative array** (the indexes are strings) the insertion ** will overwrite** the element
     at the given position. See the example below:
 
 
@@ -130,6 +130,19 @@ $fruits = new ArrayList(['fruit1' => 'apple', 'fruit2' => 'pear', 'fruit3' => 'p
 $fruits->insert('banana', 'fruit1');
 
 $fruits->toArray(); // ['fruit1' => 'banana', 'fruit2' => 'pear', 'fruit3' => 'peach']
+```
+
+A collection can contain any type of elements, i.e. arrays:
+
+```php
+<?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'pear', 'peach']);
+
+$fruits->add('pineapple', ['kiwi', 'lychee'], 'dorian');
+
+$fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'], 'dorian']
 ```
 
 ### Map
@@ -364,7 +377,7 @@ $fruits = new Set(['apple', 'pear', 'peach', 'pear', 'banana', 'apple']);
 $fruits->toArray(); // ['apple', 'pear', 'peach', 'banana']
 ```
 
-### Addiction
+### Addition
 
 You can add one or more elements to the *Set* via the [add()](api/phootwork/collection/Set.html#method_add) method:
 
@@ -375,18 +388,18 @@ use phootwork\collection\Set;
 $fruits = new Set(['apple', 'pear', 'peach']);
 
 $fruits->add('banana');
-$fruits->add('apricot', 'watermelon', 'lemon');
+$fruits->add('pineapple', ['kiwi', 'lychee'], 'dorian');
 
-$fruits->toArray(); // ['apple', 'pear', 'peach', 'banana', 'apricot', 'watermelon', 'lemon']
+$fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'], 'dorian']
 
 // Since the Set elements are unique, the instruction below doesn't modify the collection
 $fruits->add('apple', 'peach');
 
-$fruits->toArray(); // ['apple', 'pear', 'peach', 'banana', 'apricot', 'watermelon', 'lemon']
+$fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'], 'dorian']
 ```
 
 !!! note
-    Set doesn't have the [insert()](#addiction) method.
+    Set doesn't have the [insert()](#addition) method.
     
 ### More Methods
 
@@ -408,7 +421,7 @@ use phootwork\collection\Map;
 $vehicles = new Map(['1 wheel' => 'unicycle', '2 wheels' => 'scooter', '4 wheels' => 'car']);
 ```
 
-### Addictions
+### Additions
 
 You can add one element to a Map via the [set()](api/phootwork/collection/Map.html#method_set) method, which requires
 the key as first argument and the value to add as second argument: 
@@ -492,7 +505,7 @@ $fruits = new Stack(['apple', 'pear', 'peach']);
     When you deal with Stack, the order is important: the constructor pushes the elements to end of the passed array,
     so when you pop an element it results in the last of the given array.
     
-### Addictions
+### Additions
 
 You can add one or more elements to the Stack via the [push()](api/phootwork/collection/Stack.html#method_push) method:
 
@@ -505,7 +518,7 @@ $fruits = new Stack(['apple', 'pear', 'peach']);
 $fruits->push('lemon');
 $fruits->toArray(); //['apple', 'pear', 'peach', 'lemon']
 
-$fruits->pushAll('pine', 'banana', 'ananas');
+$fruits->push('pine', 'banana', 'ananas');
 $fruits->toArray(); //['apple', 'pear', 'peach', 'lemon', 'pine', 'banana', 'ananas']
 ```
 
@@ -568,7 +581,7 @@ $fruits = new Queue(['apple', 'pear', 'peach']);
     As for the Stack collection, when you deal with Queue, the order is important: the constructor enqueues the elements,
     so when you poll an element it results in the first of the given array.
 
-### Addictions
+### Additions
 
 You can add one or more elements to the Queue via the [enqueue()](api/phootwork/collection/Queue.html#method_enqueue) method:
 
@@ -579,12 +592,7 @@ use phootwork\collection\Queue;
 $fruits = new Queue(['apple', 'pear', 'peach']);
 
 $fruits->enqueue('lemon');
-$fruits->toArray(); //['apple', 'pear', 'peach', 'lemon']
-
-$toAdd = ['pine', 'banana', 'ananas'];
-
-$fruits->enqueue('pine', 'banana', 'ananas');
-$fruits->toArray(); //['ananas', 'pine', 'banana', 'apple', 'pear', 'peach', 'lemon']
+$fruits->toArray(); //['lemon', 'apple', 'pear', 'peach']
 ```
 
 ### Peek an Element
