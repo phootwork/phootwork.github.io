@@ -399,7 +399,7 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'
 ```
 
 !!! note
-    Set doesn't have the [insert()](#addition) method.
+    Set doesn't have the [insert()](#addition_1) method.
     
 ### More Methods
 
@@ -456,8 +456,7 @@ $vehicles->setAll($coll);
 
 ### Getting the Elements
 
-You can get an element of the collection via the [get()](api/phootwork/collection/Map.html#method_get) method. It expects
-the key of the element and you can also pass a default value, to return if the element is not found:
+You can get an element of the collection via the [get()](api/phootwork/collection/Map.html#method_get) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -467,9 +466,7 @@ $vehicles = new Map(['1 wheel' => 'unicycle', '2 wheels' => 'scooter', '4 wheels
 
 $vehicles->get('4 wheels'); // return 'car'
 
-$vehicles->get('6 wheels'); // not found and no default value: return null
-
-$vehicles->get('6 wheels', 'not found!'); // return 'not found!'
+$vehicles->get('6 wheels'); // not found: return null
 ```
 
 You can also get the key of an element by passing it to the [getKey()](api/phootwork/collection/Map.html#method_getKey) method:
