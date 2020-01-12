@@ -3,6 +3,7 @@ theme: cinder
 copyright: "Phootwork is licensed under the <a href='https://github.com/phootwork/phootwork/blob/master/LICENSE'>MIT license</a>"
 markdown_extensions:
   - admonition
+  - fontawesome_markdown
 nav:
   - Home: index.md
   - Libraries:
@@ -16,4 +17,5 @@ nav:
   - About:
       - About us: about.md
       - Contributing: contributing.md
+      - Documentation Contributing: docs_contributing.md
       - License: license.md
