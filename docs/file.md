@@ -275,7 +275,8 @@ To create empty files, just `touch()` them:
 $file->touch();
 ```
 
-Note: `touch()` can also be used to changes `created` and `lastAcceessed` attributes.
+!!! Note
+    `touch()` can also be used to changes `created` and `lastAcceessed` attributes.
 
 ### Reading and Writing
 

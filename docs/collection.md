@@ -6,12 +6,12 @@ which provides some collections for PHP.
 These collections are available:
 
 - Lists:
-  - `ArrayList` - provides a List
-  - `Set` - provides a Set (only unique elements)
-  - `Stack` - provides a Stack (FILO - first in last out)
-  - `Queue` - provides a Queue (FIFO - first in first out)
+   - `ArrayList` - provides a List
+   - `Set` - provides a Set (only unique elements)
+   - `Stack` - provides a Stack (FILO - first in last out)
+   - `Queue` - provides a Queue (FIFO - first in first out)
 - Maps:
-  - `Map` - provides a Map
+   - `Map` - provides a Map
 
 All classes contain phpdoc, so your lovely IDE will provide content assist on all the methods.
 
@@ -49,8 +49,8 @@ $collection->someMethod('a value', function(ElementType $element, $query) {
 ```
 
 !!! note
-Be careful: the parameters order is mandatory.
-  
+    Be careful: the parameters order is mandatory.
+
 See other examples along this document.
 
 ## ArrayList
@@ -500,8 +500,8 @@ $fruits = new Stack(['apple', 'pear', 'peach']);
 ```
 
 !!! Note
-When you deal with Stack, the order is important: the constructor pushes the elements to end of the passed array,
-so when you pop an element it results in the last of the given array.
+    When you deal with Stack, the order is important: the constructor pushes the elements to end of the passed array,
+    so when you pop an element it results in the last of the given array.
 
 ### Additions
 
@@ -575,8 +575,8 @@ $fruits = new Queue(['apple', 'pear', 'peach']);
 ```
 
 !!! Note
-As for the Stack collection, when you deal with Queue, the order is important: the constructor enqueues the elements,
-so when you poll an element it results in the first of the given array.
+    As for the Stack collection, when you deal with Queue, the order is important: the constructor enqueues the elements,
+    so when you poll an element it results in the first of the given array.
 
 ### Additions
 
