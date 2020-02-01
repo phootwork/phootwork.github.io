@@ -1,6 +1,6 @@
 # Phoootwork collection
 
-Phootowrk [collection](https://github.com/phootwork/collection) is a library inspired by java `java.util.Collection`,
+Phootwork [collection](https://github.com/phootwork/collection) is a library inspired by java `java.util.Collection`,
 which provides some collections for PHP.
 
 These collections are available:
@@ -48,14 +48,14 @@ $collection->someMethod('a value', function(ElementType $element, $query) {
 ```
 !!! note
     Be careful: the parameters order is mandatory.
-    
+
 See other examples along this document.
 
 ## ArrayList
 
-An [ArrayList](api/phootwork/collection/ArrayList.html) is a collection of data that can have same or different types and can be objects, too. Each element of the 
+An [ArrayList](api/phootwork/collection/ArrayList.html) is a collection of data that can have same or different types and can be objects, too. Each element of the
 *ArrayList* collection has an index, similar to the normal array.
-When it's important for you to access the index (sometimes called position) of the elements into the collection, 
+When it's important for you to access the index (sometimes called position) of the elements into the collection,
 then `ArrayList` is the right choice for you.
 
 You can create an ArrayList collection by passing an array or an [Iterator](https://www.php.net/manual/en/class.iterator.php)
@@ -207,7 +207,7 @@ print_r($odd); // [1, 3, 5]
 ### Search for Existence
 
 To search your collection pass in a function that takes an element as first item. If you pass a parameter to the
-[search()](api/phootwork/collection/ArrayList.html#method_search) function, this will be the second parameter to your passed function (useful if you don't want to use an 
+[search()](api/phootwork/collection/ArrayList.html#method_search) function, this will be the second parameter to your passed function (useful if you don't want to use an
 anonymous function every time).
 
 ```php
@@ -298,7 +298,7 @@ print_r($sorted); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 ### Bring your own Comparison
 
-Of course you can use your own comparison to sort a list. In the example below you can see a function in action. The 
+Of course you can use your own comparison to sort a list. In the example below you can see a function in action. The
 returned value must be an integer: 0 if the first and the second values are equal, -1 if the first is minor of the second,
 1 if the first is major of the second.
 
@@ -366,7 +366,7 @@ use phootwork\collection\Set;
 $fruits = new Set(['apple', 'pear', 'peach']);
 ```
 
-Since the collection is composed by unique elements, any duplicates are ignored: 
+Since the collection is composed by unique elements, any duplicates are ignored:
 
 ```php
 <?php declare(strict_types=1);
@@ -400,7 +400,7 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'
 
 !!! note
     Set doesn't have the [insert()](#addition_1) method.
-    
+
 ### More Methods
 
 Many Set methods are shared with other collections: please see the [api documentation](api/phootwork/collection/Set.html)
@@ -424,7 +424,7 @@ $vehicles = new Map(['1 wheel' => 'unicycle', '2 wheels' => 'scooter', '4 wheels
 ### Additions
 
 You can add one element to a Map via the [set()](api/phootwork/collection/Map.html#method_set) method, which requires
-the key as first argument and the value to add as second argument: 
+the key as first argument and the value to add as second argument:
 
 ```php
 <?php declare(strict_types=1);
@@ -501,7 +501,7 @@ $fruits = new Stack(['apple', 'pear', 'peach']);
 !!! Note
     When you deal with Stack, the order is important: the constructor pushes the elements to end of the passed array,
     so when you pop an element it results in the last of the given array.
-    
+
 ### Additions
 
 You can add one or more elements to the Stack via the [push()](api/phootwork/collection/Stack.html#method_push) method:
