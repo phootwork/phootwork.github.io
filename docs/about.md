@@ -1,4 +1,4 @@
-## Who's Behind Phootwork?
+# About
 
 Phootwork is created by [gossi](https://github.com/gossi) and maintained by himself
 and other [contributors](https://github.com/phootwork/phootwork/graphs/contributors).
