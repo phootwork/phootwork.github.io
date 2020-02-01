@@ -1,6 +1,6 @@
-PHP Json library
+# Phoootwork collection
 
-## Goals
+Phootwork [json](https://github.com/phootwork/json) library.
 
 - Wrap native PHP functions with classes
 - Provide solid error handling with exceptions
@@ -9,7 +9,7 @@ PHP Json library
 
 Installation via composer:
 
-```
+```bash
 composer require phootwork/json
 ```
 
@@ -20,7 +20,7 @@ The `Json::decode()` works almost similarly to php's `json_decode()` except it a
 ### Synopsis
 
 ```php
-array Json::decode (string $json [, int $options = 0 [, int $depth = 512]])
+array Json::decode(string $json [, int $options = 0 [, int $depth = 512]])
 ```
 
 ### Simple Decoding
@@ -28,7 +28,7 @@ array Json::decode (string $json [, int $options = 0 [, int $depth = 512]])
 Decoding is straight forward:
 
 ```php
-<?php
+<?php declare(strict_types=1);
 use phootwork\json\Json;
 
 $json = '...';
@@ -39,26 +39,31 @@ $array = Json::decode($json);
 
 ### Decode to Collection
 
-The json package works in harmony with [Collections](/collection). You can decode json into any collection easily.
+The json package works in harmony with [Collections](/collection). You can
+decode json into any collection easily.
 
 ```php
-<?php
+<?php declare(strict_types=1);
 use phootwork\json\Json;
 
 $json = '...';
 $array = Json::toCollection($json);
 ```
 
-The collection parser will detect what kind of collection type (`Map` or `ArrayList`) the provided json is and will return the matching type of collection. If you know what kind of collection to expect you can call `Json::toMap()` or `Json::toList()` directly.
+The collection parser will detect what kind of collection type (`Map` or
+`ArrayList`) the provided json is and will return the matching type of
+collection. If you know what kind of collection to expect you can call
+`Json::toMap()` or `Json::toList()` directly.
 
 ## Encode
 
-The `Json::encode()` function works almost similarly to php's `json_encode()`, except there is proper [error handling](../error-handling/) built in.
+The `Json::encode()` function works almost similarly to php's `json_encode()`,
+except there is proper [error handling](#error-handling) built in.
 
 ### Synopsis
 
 ```php
-string Json::encode (mixed $data [, int $options = 0 [, int $depth = 512]])
+string Json::encode(mixed $data [, int $options = 0 [, int $depth = 512]])
 ```
 
 ### Simple Encoding
@@ -66,7 +71,7 @@ string Json::encode (mixed $data [, int $options = 0 [, int $depth = 512]])
 Encoding data into json is done straight forward:
 
 ```php
-<?php
+<?php declare(strict_types=1);
 use phootwork\json\Json;
 
 $data = [...];
@@ -78,7 +83,7 @@ $json = Json::encode($data);
 You can also pass options as second parameter:
 
 ```php
-<?php
+<?php declare(strict_types=1);
 use phootwork\json\Json;
 
 $data = [...];
@@ -90,7 +95,7 @@ $json = Json::encode($data, Json::PRETTY_PRINT | Json::UNESCAPED_SLASHES);
 Error handling with native php functions is a bit ... well... "old". For that reason every call to `Json::*` will throw an exception. Let's see an example for that:
 
 ```php
-<?php
+<?php declare(strict_types=1);
 use phootwork\json\Json;
 use phootwork\json\JsonException;
 
