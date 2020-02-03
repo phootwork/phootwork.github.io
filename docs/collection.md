@@ -6,12 +6,12 @@ which provides some collections for PHP.
 These collections are available:
 
 - Lists:
-    - `ArrayList` - provides a List
-    - `Set` - provides a Set (only unique elements)
-    - `Stack` - provides a Stack (FILO - first in last out)
-    - `Queue` - provides a Queue (FIFO - first in first out)
+   - `ArrayList` - provides a List
+   - `Set` - provides a Set (only unique elements)
+   - `Stack` - provides a Stack (FILO - first in last out)
+   - `Queue` - provides a Queue (FIFO - first in first out)
 - Maps:
-    - `Map` - provides a Map
+   - `Map` - provides a Map
 
 All classes contain phpdoc, so your lovely IDE will provide content assist on all the methods.
 
@@ -19,7 +19,7 @@ All classes contain phpdoc, so your lovely IDE will provide content assist on al
 
 Installation via composer:
 
-```
+```bash
 composer require phootwork/collection
 ```
 
@@ -35,6 +35,7 @@ $collection->someMethod(function(ElementType $element) {
     // some element manipulation
 });
 ```
+
 You can also pass a value to the function, as an additional parameter and you'll find it as the second parameter of your
 function:
 
@@ -46,6 +47,7 @@ $collection->someMethod('a value', function(ElementType $element, $query) {
     return $element->getSomething() === $query;
 });
 ```
+
 !!! note
     Be careful: the parameters order is mandatory.
 
@@ -54,7 +56,7 @@ See other examples along this document.
 ## ArrayList
 
 An [ArrayList](api/phootwork/collection/ArrayList.html) is a collection of data that can have same or different types and can be objects, too. Each element of the
-*ArrayList* collection has an index, similar to the normal array.
+_ArrayList_ collection has an index, similar to the normal array.
 When it's important for you to access the index (sometimes called position) of the elements into the collection,
 then `ArrayList` is the right choice for you.
 
@@ -85,7 +87,7 @@ $fruits->contains('pear'); // (bool) true
 
 ### Addition
 
-You can add one or more elements to the *ArrayList* via the [add()](api/phootwork/collection/ArrayList.html#method_add) method:
+You can add one or more elements to the _ArrayList_ via the [add()](api/phootwork/collection/ArrayList.html#method_add) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -117,9 +119,8 @@ $fruits->toArray(); // ['apple', 'banana', 'pear', 'peach']
 The insertion of an element, at a given position, moves the next elements of one position.
 
 !!! warning
-    If your *ArrayList* models an **associative array** (the indexes are strings) the insertion ** will overwrite** the element
+    If your _ArrayList_ models an **associative array** (the indexes are strings) the insertion ** will overwrite** the element
     at the given position. See the example below:
-
 
 ```php
 <?php declare(strict_types=1);
@@ -349,11 +350,11 @@ $fruits->toArray(); // ['apple']
 
 ### More Methods
 
-You can find more *ArrayList* methods into the [api documentation](api/phootwork/collection/ArrayList.html).
+You can find more _ArrayList_ methods into the [api documentation](api/phootwork/collection/ArrayList.html).
 
 ## Set
 
-The [Set](api/phootwork/collection/Set.html) collection is composed by *unique* elements. It shares much methods with `ArrayList` except those which manipulate indexes.
+The [Set](api/phootwork/collection/Set.html) collection is composed by _unique_ elements. It shares much methods with `ArrayList` except those which manipulate indexes.
 When you use a `Set` collection you really don't care about indexes.
 
 As usual, you can create a Set collection by passing an array or an [Iterator](https://www.php.net/manual/en/class.iterator.php)
@@ -379,7 +380,7 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'banana']
 
 ### Addition
 
-You can add one or more elements to the *Set* via the [add()](api/phootwork/collection/Set.html#method_add) method:
+You can add one or more elements to the _Set_ via the [add()](api/phootwork/collection/Set.html#method_add) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -411,7 +412,7 @@ and the examples above, in [ArrayList](#arraylist) section of this document.
 A [Map](api/phootwork/collection/Map.html) is a collection of key-value pairs, where the value can be any type you want, objects included. You can think about Map
 as an associative array with super-powers.
 
-As usual, you can instantiate a new *Map* object by passing an associative array or an
+As usual, you can instantiate a new _Map_ object by passing an associative array or an
 [Iterator](https://www.php.net/manual/en/class.iterator.php) object to the constructor:
 
 ```php
@@ -558,7 +559,6 @@ $fruits->toArray(); // ['apple', 'pear', 'peach']
 ### More Methods
 
 You can find all the other Stack methods in the [documentation api](api/phootwork/collection/Stack.html).
-
 
 ## Queue
 
