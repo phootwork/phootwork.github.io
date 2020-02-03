@@ -1,6 +1,6 @@
 # Phoootwork collection
 
-Phootowrk [collection](https://github.com/phootwork/collection) is a library inspired by java `java.util.Collection`,
+Phootwork [collection](https://github.com/phootwork/collection) is a library inspired by java `java.util.Collection`,
 which provides some collections for PHP.
 
 These collections are available:
@@ -119,8 +119,8 @@ $fruits->toArray(); // ['apple', 'banana', 'pear', 'peach']
 The insertion of an element, at a given position, moves the next elements of one position.
 
 !!! warning
-If your _ArrayList_ models an **associative array** (the indexes are strings) the insertion ** will overwrite** the element
-at the given position. See the example below:
+    If your _ArrayList_ models an **associative array** (the indexes are strings) the insertion ** will overwrite** the element
+    at the given position. See the example below:
 
 ```php
 <?php declare(strict_types=1);
@@ -400,7 +400,7 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'
 ```
 
 !!! note
-Set doesn't have the [insert()](#addition_1) method.
+    Set doesn't have the [insert()](#addition_1) method.
 
 ### More Methods
 
