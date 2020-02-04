@@ -15,7 +15,7 @@ nav:
       - Lang: lang.md
       - Tokenizer: tokenizer.md
       - Xml: xml.md
-  - Api: api/index.html
+  - Api: https://phootwork.github.io/api
   - About:
       - About us: about.md
       - Contributing: contributing.md

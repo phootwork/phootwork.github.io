@@ -55,7 +55,7 @@ See other examples along this document.
 
 ## ArrayList
 
-An [ArrayList](api/phootwork/collection/ArrayList.html) is a collection of data that can have same or different types and can be objects, too. Each element of the
+An [ArrayList](https://phootwork.github.io/api/phootwork/collection/ArrayList.html) is a collection of data that can have same or different types and can be objects, too. Each element of the
 _ArrayList_ collection has an index, similar to the normal array.
 When it's important for you to access the index (sometimes called position) of the elements into the collection,
 then `ArrayList` is the right choice for you.
@@ -87,7 +87,7 @@ $fruits->contains('pear'); // (bool) true
 
 ### Addition
 
-You can add one or more elements to the _ArrayList_ via the [add()](api/phootwork/collection/ArrayList.html#method_add) method:
+You can add one or more elements to the _ArrayList_ via the [add()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_add) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -102,7 +102,7 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'banana', 'apricot', 'watermel
 ```
 
 As you can see in the example above, `add` method appends an element at the end of the collection.
-If you want to define the position of the added element you can use the [insert()](api/phootwork/collection/ArrayList.html#method_insert) method; remember that the position starts from 0
+If you want to define the position of the added element you can use the [insert()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_insert) method; remember that the position starts from 0
 (exactly as the index of an array):
 
 ```php
@@ -208,7 +208,7 @@ print_r($odd); // [1, 3, 5]
 ### Search for Existence
 
 To search your collection pass in a function that takes an element as first item. If you pass a parameter to the
-[search()](api/phootwork/collection/ArrayList.html#method_search) function, this will be the second parameter to your passed function (useful if you don't want to use an
+[search()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_search) function, this will be the second parameter to your passed function (useful if you don't want to use an
 anonymous function every time).
 
 ```php
@@ -231,7 +231,7 @@ $found = $list->search(4, function (int $elem, int $query): bool {
 ### Find an Element
 
 While `search()` only tells you some element is present, if you want to return this element use the
-[find()](api/phootwork/collection/ArrayList.html#method_find) rsp. [findAll()](api/phootwork/collection/ArrayList.html#method_findAll)
+[find()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_find) rsp. [findAll()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_findAll)
 method.
 
 ```php
@@ -250,8 +250,8 @@ $bananas = $fruits->findAll(function(string $elem): bool {
 
 ### Find an Index
 
-If you are interested in the index of a search, you can use [findIndex()](api/phootwork/collection/ArrayList.html#method_findIndex).
-There is also [findLastIndex()](api/phootwork/collection/ArrayList.html#method_findLastIndex) which searches the list
+If you are interested in the index of a search, you can use [findIndex()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_findIndex).
+There is also [findLastIndex()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_findLastIndex) which searches the list
 from back to front.
 
 ```php
@@ -273,7 +273,7 @@ echo $lastIndex; // 3
 
 ### Reversing
 
-You can swap the order of your elements with [reverse()](api/phootwork/collection/ArrayList.html#method_reverse).
+You can swap the order of your elements with [reverse()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_reverse).
 
 ```php
 <?php declare(strict_types=1);
@@ -286,7 +286,7 @@ print_r($reversed); // [10, 7, 1, 6, 4, 9, 3, 8, 2, 5]
 
 ### Simple Sorting
 
-There is built in support for running [sort()](api/phootwork/collection/ArrayList.html#method_sort):
+There is built in support for running [sort()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_sort):
 
 ```php
 <?php declare(strict_types=1);
@@ -318,7 +318,7 @@ $sorted = $unsorted->sort($cmp);
 print_r($sorted); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
-Or you can bring in any [Comparator](api/phootwork/lang/Comparator.html). So good, there is a [ComparableComparator](api/phootwork/lang/ComparableComparator.html)
+Or you can bring in any [Comparator](https://phootwork.github.io/api/phootwork/lang/Comparator.html). So good, there is a [ComparableComparator](https://phootwork.github.io/api/phootwork/lang/ComparableComparator.html)
 provided by `phootwork/lang` we can use.
 
 ```php
@@ -333,7 +333,7 @@ print_r($sorted); // ['a', 'c', 'm', 't', 'x']
 
 ### Remove
 
-You can remove one or more elements from a collection, via the [remove()](api/phootwork/collection/ArrayList.html#method_remove)
+You can remove one or more elements from a collection, via the [remove()](https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_remove)
 method:
 
 ```php
@@ -350,11 +350,11 @@ $fruits->toArray(); // ['apple']
 
 ### More Methods
 
-You can find more _ArrayList_ methods into the [api documentation](api/phootwork/collection/ArrayList.html).
+You can find more _ArrayList_ methods into the [api documentation](https://phootwork.github.io/api/phootwork/collection/ArrayList.html).
 
 ## Set
 
-The [Set](api/phootwork/collection/Set.html) collection is composed by _unique_ elements. It shares much methods with `ArrayList` except those which manipulate indexes.
+The [Set](https://phootwork.github.io/api/phootwork/collection/Set.html) collection is composed by _unique_ elements. It shares much methods with `ArrayList` except those which manipulate indexes.
 When you use a `Set` collection you really don't care about indexes.
 
 As usual, you can create a Set collection by passing an array or an [Iterator](https://www.php.net/manual/en/class.iterator.php)
@@ -380,7 +380,7 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'banana']
 
 ### Addition
 
-You can add one or more elements to the _Set_ via the [add()](api/phootwork/collection/Set.html#method_add) method:
+You can add one or more elements to the _Set_ via the [add()](https://phootwork.github.io/api/phootwork/collection/Set.html#method_add) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -404,12 +404,12 @@ $fruits->toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'
 
 ### More Methods
 
-Many Set methods are shared with other collections: please see the [api documentation](api/phootwork/collection/Set.html)
+Many Set methods are shared with other collections: please see the [api documentation](https://phootwork.github.io/api/phootwork/collection/Set.html)
 and the examples above, in [ArrayList](#arraylist) section of this document.
 
 ## Map
 
-A [Map](api/phootwork/collection/Map.html) is a collection of key-value pairs, where the value can be any type you want, objects included. You can think about Map
+A [Map](https://phootwork.github.io/api/phootwork/collection/Map.html) is a collection of key-value pairs, where the value can be any type you want, objects included. You can think about Map
 as an associative array with super-powers.
 
 As usual, you can instantiate a new _Map_ object by passing an associative array or an
@@ -424,7 +424,7 @@ $vehicles = new Map(['1 wheel' => 'unicycle', '2 wheels' => 'scooter', '4 wheels
 
 ### Additions
 
-You can add one element to a Map via the [set()](api/phootwork/collection/Map.html#method_set) method, which requires
+You can add one element to a Map via the [set()](https://phootwork.github.io/api/phootwork/collection/Map.html#method_set) method, which requires
 the key as first argument and the value to add as second argument:
 
 ```php
@@ -436,7 +436,7 @@ $vehicles = new Map(['1 wheel' => 'unicycle', '2 wheels' => 'scooter', '4 wheels
 $vehicles->set('3 wheels', 'sidecar');
 ```
 
-You can add more elements via the [setAll()](api/phootwork/collection/Map.html#method_setAll) method. It expects an associative
+You can add more elements via the [setAll()](https://phootwork.github.io/api/phootwork/collection/Map.html#method_setAll) method. It expects an associative
 array or an [Iterator](https://www.php.net/manual/en/class.iterator.php) of elements to add:
 
 ```php
@@ -457,7 +457,7 @@ $vehicles->setAll($coll);
 
 ### Getting the Elements
 
-You can get an element of the collection via the [get()](api/phootwork/collection/Map.html#method_get) method:
+You can get an element of the collection via the [get()](https://phootwork.github.io/api/phootwork/collection/Map.html#method_get) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -470,7 +470,7 @@ $vehicles->get('4 wheels'); // return 'car'
 $vehicles->get('6 wheels'); // not found: return null
 ```
 
-You can also get the key of an element by passing it to the [getKey()](api/phootwork/collection/Map.html#method_getKey) method:
+You can also get the key of an element by passing it to the [getKey()](https://phootwork.github.io/api/phootwork/collection/Map.html#method_getKey) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -483,11 +483,11 @@ $vehicles->getKey('scooter'); // return '2 wheels'
 
 ### More Methods
 
-You can find all the other Map methods in the [documentation api](api/phootwork/collection/Map.html).
+You can find all the other Map methods in the [documentation api](https://phootwork.github.io/api/phootwork/collection/Map.html).
 
 ## Stack
 
-A [Stack](api/phootwork/collection/Stack.html) is a FILO (First In Last Out) collection.
+A [Stack](https://phootwork.github.io/api/phootwork/collection/Stack.html) is a FILO (First In Last Out) collection.
 
 As usual you can create a Stack by passing an array, or an [Iterator](https://www.php.net/manual/en/class.iterator.php),
 to the constructor:
@@ -505,7 +505,7 @@ $fruits = new Stack(['apple', 'pear', 'peach']);
 
 ### Additions
 
-You can add one or more elements to the Stack via the [push()](api/phootwork/collection/Stack.html#method_push) method:
+You can add one or more elements to the Stack via the [push()](https://phootwork.github.io/api/phootwork/collection/Stack.html#method_push) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -522,7 +522,7 @@ $fruits->toArray(); //['apple', 'pear', 'peach', 'lemon', 'pine', 'banana', 'ana
 
 ### Peek an Element
 
-The method [peek()](api/phootwork/collection/Stack.html#method_peek) returns the last inserted element of the collection
+The method [peek()](https://phootwork.github.io/api/phootwork/collection/Stack.html#method_peek) returns the last inserted element of the collection
 but it doesn't remove it:
 
 ```php
@@ -558,11 +558,11 @@ $fruits->toArray(); // ['apple', 'pear', 'peach']
 
 ### More Methods
 
-You can find all the other Stack methods in the [documentation api](api/phootwork/collection/Stack.html).
+You can find all the other Stack methods in the [documentation api](https://phootwork.github.io/api/phootwork/collection/Stack.html).
 
 ## Queue
 
-A [Queue](api/phootwork/collection/Queue.html) is a FIFO (First In First Out) collection.
+A [Queue](https://phootwork.github.io/api/phootwork/collection/Queue.html) is a FIFO (First In First Out) collection.
 
 As usual, you can create a Queue by passing an array, or an [Iterator](https://www.php.net/manual/en/class.iterator.php),
 to the constructor:
@@ -580,7 +580,7 @@ $fruits = new Queue(['apple', 'pear', 'peach']);
 
 ### Additions
 
-You can add one or more elements to the Queue via the [enqueue()](api/phootwork/collection/Queue.html#method_enqueue) method:
+You can add one or more elements to the Queue via the [enqueue()](https://phootwork.github.io/api/phootwork/collection/Queue.html#method_enqueue) method:
 
 ```php
 <?php declare(strict_types=1);
@@ -594,7 +594,7 @@ $fruits->toArray(); //['lemon', 'apple', 'pear', 'peach']
 
 ### Peek an Element
 
-The [peek()](api/phootwork/collection/Queue.html#method_peek) method returns the first inserted element of the collection but
+The [peek()](https://phootwork.github.io/api/phootwork/collection/Queue.html#method_peek) method returns the first inserted element of the collection but
 it doesn't remove it:
 
 ```php
@@ -630,4 +630,4 @@ $fruits->toArray(); // ['pear', 'peach', 'pine']
 
 ### More Methods
 
-You can find all the other Queue methods in the [documentation api](api/phootwork/collection/Queue.html).
+You can find all the other Queue methods in the [documentation api](https://phootwork.github.io/api/phootwork/collection/Queue.html).

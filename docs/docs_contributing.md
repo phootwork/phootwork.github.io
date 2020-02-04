@@ -3,6 +3,15 @@
 The Phootwork documentation site is written in [markdown](https://daringfireball.net/projects/markdown/) and built
 with [MkDocs](https://www.mkdocs.org).
 
+## Branch strategy
+
+The documentation repository has two branches:
+
+-  `mkdocs` contains the markdown documentation. You should work on this branch if you want to contribute and you should
+submit here your pull requests.
+-  `master` contains the site __compiled__ by Mkdocs. This branch is handled only by our Github Actions bot.
+No pull request will be merged on it.
+
 ## Clone and Install
 
 1. Fork and clone the documentation [repository](https://github.com/phootwork/phootwork.github.io)
@@ -42,6 +51,6 @@ which translates into the following:
 In example:
  
 ```bash
-    *I :fas fa-heart: phootwork!*
+    _I :fas fa-heart: phootwork!_
 ```
-translates into: *I :fas fa-heart: phootwork!*.
+translates into: _I :fas fa-heart: phootwork!_.
