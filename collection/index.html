@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Collection - Phootwork</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Phootwork</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Collection</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/">File</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../json/">Json</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../lang/">Lang</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tokenizer/">Tokenizer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../xml/">Xml</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="https://phootwork.github.io/api">Api</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../about/">About us</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docs_contributing/">Documentation Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../license/">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="..">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../file/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/phootwork/phootwork.github.io/docs/collection.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#phoootwork-collection">Phoootwork collection</a></li>
+            <li class="second-level"><a href="#installation">Installation</a></li>
+                
+            <li class="second-level"><a href="#functional-flavour">Functional Flavour</a></li>
+                
+            <li class="second-level"><a href="#arraylist">ArrayList</a></li>
+                
+                <li class="third-level"><a href="#addition">Addition</a></li>
+                <li class="third-level"><a href="#map">Map</a></li>
+                <li class="third-level"><a href="#each">Each</a></li>
+                <li class="third-level"><a href="#reduce">Reduce</a></li>
+                <li class="third-level"><a href="#filter">Filter</a></li>
+                <li class="third-level"><a href="#search-for-existence">Search for Existence</a></li>
+                <li class="third-level"><a href="#find-an-element">Find an Element</a></li>
+                <li class="third-level"><a href="#find-an-index">Find an Index</a></li>
+                <li class="third-level"><a href="#reversing">Reversing</a></li>
+                <li class="third-level"><a href="#simple-sorting">Simple Sorting</a></li>
+                <li class="third-level"><a href="#bring-your-own-comparison">Bring your own Comparison</a></li>
+                <li class="third-level"><a href="#remove">Remove</a></li>
+                <li class="third-level"><a href="#more-methods">More Methods</a></li>
+            <li class="second-level"><a href="#set">Set</a></li>
+                
+                <li class="third-level"><a href="#addition_1">Addition</a></li>
+                <li class="third-level"><a href="#more-methods_1">More Methods</a></li>
+            <li class="second-level"><a href="#map_1">Map</a></li>
+                
+                <li class="third-level"><a href="#additions">Additions</a></li>
+                <li class="third-level"><a href="#getting-the-elements">Getting the Elements</a></li>
+                <li class="third-level"><a href="#more-methods_2">More Methods</a></li>
+            <li class="second-level"><a href="#stack">Stack</a></li>
+                
+                <li class="third-level"><a href="#additions_1">Additions</a></li>
+                <li class="third-level"><a href="#peek-an-element">Peek an Element</a></li>
+                <li class="third-level"><a href="#pop-an-element">Pop an Element</a></li>
+                <li class="third-level"><a href="#more-methods_3">More Methods</a></li>
+            <li class="second-level"><a href="#queue">Queue</a></li>
+                
+                <li class="third-level"><a href="#additions_2">Additions</a></li>
+                <li class="third-level"><a href="#peek-an-element_1">Peek an Element</a></li>
+                <li class="third-level"><a href="#poll-an-element">Poll an Element</a></li>
+                <li class="third-level"><a href="#more-methods_4">More Methods</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="phoootwork-collection">Phoootwork collection</h1>
+<p>Phootwork <a href="https://github.com/phootwork/collection">collection</a> is a library inspired by java <code>java.util.Collection</code>,
+which provides some collections for PHP.</p>
+<p>These collections are available:</p>
+<ul>
+<li>Lists:</li>
+<li><code>ArrayList</code> - provides a List</li>
+<li><code>Set</code> - provides a Set (only unique elements)</li>
+<li><code>Stack</code> - provides a Stack (FILO - first in last out)</li>
+<li><code>Queue</code> - provides a Queue (FIFO - first in first out)</li>
+<li>Maps:</li>
+<li><code>Map</code> - provides a Map</li>
+</ul>
+<p>All classes contain phpdoc, so your lovely IDE will provide content assist on all the methods.</p>
+<h2 id="installation">Installation</h2>
+<p>Installation via composer:</p>
+<pre><code class="bash">composer require phootwork/collection
+</code></pre>
+
+<h2 id="functional-flavour">Functional Flavour</h2>
+<p>Some method of the collections accepts a callback (usually a closure) as parameter; the passed function receives an
+element of the collection as parameter, i.e.:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+
+$collection-&gt;someMethod(function(ElementType $element) {
+    // some element manipulation
+});
+</code></pre>
+
+<p>You can also pass a value to the function, as an additional parameter and you'll find it as the second parameter of your
+function:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+
+$collection-&gt;someMethod('a value', function(ElementType $element, $query) {
+    // $query contains 'a value' string
+    return $element-&gt;getSomething() === $query;
+});
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be careful: the parameters order is mandatory.</p>
+</div>
+<p>See other examples along this document.</p>
+<h2 id="arraylist">ArrayList</h2>
+<p>An <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html">ArrayList</a> is a collection of data that can have same or different types and can be objects, too. Each element of the
+<em>ArrayList</em> collection has an index, similar to the normal array.
+When it's important for you to access the index (sometimes called position) of the elements into the collection,
+then <code>ArrayList</code> is the right choice for you.</p>
+<p>You can create an ArrayList collection by passing an array or an <a href="https://www.php.net/manual/en/class.iterator.php">Iterator</a>
+object to the constructor:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'pear', 'peach']);
+</code></pre>
+
+<p>Now you're ready to manipulate your collection:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'pear', 'peach']);
+
+$fruits-&gt;size();     // (int) 3
+$fruits-&gt;isEmpty(); // (bool) false
+$fruits-&gt;contains('pear'); // (bool) true
+
+// Much more into the api documentation
+</code></pre>
+
+<h3 id="addition">Addition</h3>
+<p>You can add one or more elements to the <em>ArrayList</em> via the <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_add">add()</a> method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'pear', 'peach']);
+
+$fruits-&gt;add('banana');
+$fruits-&gt;add('apricot', 'watermelon', 'lemon');
+
+$fruits-&gt;toArray(); // ['apple', 'pear', 'peach', 'banana', 'apricot', 'watermelon', 'lemon']
+</code></pre>
+
+<p>As you can see in the example above, <code>add</code> method appends an element at the end of the collection.
+If you want to define the position of the added element you can use the <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_insert">insert()</a> method; remember that the position starts from 0
+(exactly as the index of an array):</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'pear', 'peach']);
+
+$fruits-&gt;insert('banana', 1);
+
+$fruits-&gt;toArray(); // ['apple', 'banana', 'pear', 'peach']
+</code></pre>
+
+<p>The insertion of an element, at a given position, moves the next elements of one position.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If your <em>ArrayList</em> models an <strong>associative array</strong> (the indexes are strings) the insertion <strong> will overwrite</strong> the element
+at the given position. See the example below:</p>
+</div>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['fruit1' =&gt; 'apple', 'fruit2' =&gt; 'pear', 'fruit3' =&gt; 'peach']);
+
+$fruits-&gt;insert('banana', 'fruit1');
+
+$fruits-&gt;toArray(); // ['fruit1' =&gt; 'banana', 'fruit2' =&gt; 'pear', 'fruit3' =&gt; 'peach']
+</code></pre>
+
+<p>A collection can contain any type of elements, i.e. arrays:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'pear', 'peach']);
+
+$fruits-&gt;add('pineapple', ['kiwi', 'lychee'], 'dorian');
+
+$fruits-&gt;toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'], 'dorian']
+</code></pre>
+
+<h3 id="map">Map</h3>
+<p>Applies the callback to the elements of a collection and returns an <code>ArrayList</code> object containing the result of the manipulation.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$list = new ArrayList([2, 3, 4]);
+$pow2 = $list-&gt;map(function (int $element): int {
+    return $element * $element;
+});
+print_r($pow2); // [4, 9, 16]
+</code></pre>
+
+<h3 id="each">Each</h3>
+<p>Iteration with a callback function without returning anything.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$list = new ArrayList(range(1, 10));
+$list-&gt;each(function(int $elem): void {
+    // do something with $elem
+});
+</code></pre>
+
+<h3 id="reduce">Reduce</h3>
+<p>Iteratively reduce a collection to a single value using a callback function.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$list = new ArrayList(range(1, 10));
+$sum = $list-&gt;reduce(function(int $a, int $b) {
+    return $a + $b;
+});
+echo $sum; // 55
+</code></pre>
+
+<h3 id="filter">Filter</h3>
+<p>Filters elements of a collection using a callback function.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$list = new ArrayList([1, 2, 3, 4, 5, 6]);
+$odd = $list-&gt;filter(function (int $item): int {
+    return $item &amp; 1;
+});
+print_r($odd); // [1, 3, 5]
+</code></pre>
+
+<h3 id="search-for-existence">Search for Existence</h3>
+<p>To search your collection pass in a function that takes an element as first item. If you pass a parameter to the
+<a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_search">search()</a> function, this will be the second parameter to your passed function (useful if you don't want to use an
+anonymous function every time).</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$list = new ArrayList(range(1, 10));
+
+$found = $list-&gt;search(function (int $elem): bool {
+    return $elem === 4;
+});
+
+// use a function that takes the query as second parameter
+// $query will have the value 4 as you've just passed in
+$found = $list-&gt;search(4, function (int $elem, int $query): bool {
+    return $elem === $query;
+});
+</code></pre>
+
+<h3 id="find-an-element">Find an Element</h3>
+<p>While <code>search()</code> only tells you some element is present, if you want to return this element use the
+<a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_find">find()</a> rsp. <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_findAll">findAll()</a>
+method.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'banana', 'pine', 'banana', 'ananas']);
+$pine = $fruits-&gt;find(function (string $elem): bool {
+    return $elem === 'pine';
+});
+
+$bananas = $fruits-&gt;findAll(function(string $elem): bool {
+    return $elem === 'banana';
+});
+</code></pre>
+
+<h3 id="find-an-index">Find an Index</h3>
+<p>If you are interested in the index of a search, you can use <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_findIndex">findIndex()</a>.
+There is also <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_findLastIndex">findLastIndex()</a> which searches the list
+from back to front.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'banana', 'pine', 'banana', 'ananas']);
+$index = $fruits-&gt;findIndex(function (string $elem): bool {
+    return $elem == 'banana';
+});
+
+echo $index; // 1
+
+$lastIndex = $fruits-&gt;findLastIndex(function (string $elem): bool {
+    return $elem == 'banana';
+});
+echo $lastIndex; // 3
+</code></pre>
+
+<h3 id="reversing">Reversing</h3>
+<p>You can swap the order of your elements with <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_reverse">reverse()</a>.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$list = new ArrayList([5, 2, 8, 3, 9, 4, 6, 1, 7, 10]);
+$reversed = $list-&gt;reverse();
+print_r($reversed); // [10, 7, 1, 6, 4, 9, 3, 8, 2, 5]
+</code></pre>
+
+<h3 id="simple-sorting">Simple Sorting</h3>
+<p>There is built in support for running <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_sort">sort()</a>:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$unsorted = new ArrayList([5, 2, 8, 3, 9, 4, 6, 1, 7, 10]);
+$sorted = $unsorted-&gt;sort();
+print_r($sorted); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre>
+
+<h3 id="bring-your-own-comparison">Bring your own Comparison</h3>
+<p>Of course you can use your own comparison to sort a list. In the example below you can see a function in action. The
+returned value must be an integer: 0 if the first and the second values are equal, -1 if the first is minor of the second,
+1 if the first is major of the second.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$unsorted = new ArrayList([5, 2, 8, 3, 9, 4, 6, 1, 7, 10]);
+$cmp = function (int $a, int $b): int {
+    if ($a == $b) {
+        return 0;
+    }
+    return ($a &lt; $b) ? -1 : 1;
+};
+$sorted = $unsorted-&gt;sort($cmp);
+print_r($sorted); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre>
+
+<p>Or you can bring in any <a href="https://phootwork.github.io/api/phootwork/lang/Comparator.html">Comparator</a>. So good, there is a <a href="https://phootwork.github.io/api/phootwork/lang/ComparableComparator.html">ComparableComparator</a>
+provided by <code>phootwork/lang</code> we can use.</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+use phootwork\lang\ComparableComparator;
+
+$unsorted = new ArrayList(['x', 'c', 'a', 't', 'm']);
+$sorted = $unsorted-&gt;sort(new ComparableComparator());
+print_r($sorted); // ['a', 'c', 'm', 't', 'x']
+</code></pre>
+
+<h3 id="remove">Remove</h3>
+<p>You can remove one or more elements from a collection, via the <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html#method_remove">remove()</a>
+method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\ArrayList;
+
+$fruits = new ArrayList(['apple', 'banana', 'pine', 'banana', 'ananas']);
+
+$fruits-&gt;remove('banana');
+$fruits-&gt;remove('banana', 'ananas', 'pine');
+
+$fruits-&gt;toArray(); // ['apple']
+</code></pre>
+
+<h3 id="more-methods">More Methods</h3>
+<p>You can find more <em>ArrayList</em> methods into the <a href="https://phootwork.github.io/api/phootwork/collection/ArrayList.html">api documentation</a>.</p>
+<h2 id="set">Set</h2>
+<p>The <a href="https://phootwork.github.io/api/phootwork/collection/Set.html">Set</a> collection is composed by <em>unique</em> elements. It shares much methods with <code>ArrayList</code> except those which manipulate indexes.
+When you use a <code>Set</code> collection you really don't care about indexes.</p>
+<p>As usual, you can create a Set collection by passing an array or an <a href="https://www.php.net/manual/en/class.iterator.php">Iterator</a>
+object to the constructor:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Set;
+
+$fruits = new Set(['apple', 'pear', 'peach']);
+</code></pre>
+
+<p>Since the collection is composed by unique elements, any duplicates are ignored:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Set;
+
+$fruits = new Set(['apple', 'pear', 'peach', 'pear', 'banana', 'apple']);
+
+$fruits-&gt;toArray(); // ['apple', 'pear', 'peach', 'banana']
+</code></pre>
+
+<h3 id="addition_1">Addition</h3>
+<p>You can add one or more elements to the <em>Set</em> via the <a href="https://phootwork.github.io/api/phootwork/collection/Set.html#method_add">add()</a> method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Set;
+
+$fruits = new Set(['apple', 'pear', 'peach']);
+
+$fruits-&gt;add('banana');
+$fruits-&gt;add('pineapple', ['kiwi', 'lychee'], 'dorian');
+
+$fruits-&gt;toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'], 'dorian']
+
+// Since the Set elements are unique, the instruction below doesn't modify the collection
+$fruits-&gt;add('apple', 'peach');
+
+$fruits-&gt;toArray(); // ['apple', 'pear', 'peach', 'pineapple', ['kiwi', 'lychee'], 'dorian']
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Set doesn't have the <a href="#addition_1">insert()</a> method.</p>
+</div>
+<h3 id="more-methods_1">More Methods</h3>
+<p>Many Set methods are shared with other collections: please see the <a href="https://phootwork.github.io/api/phootwork/collection/Set.html">api documentation</a>
+and the examples above, in <a href="#arraylist">ArrayList</a> section of this document.</p>
+<h2 id="map_1">Map</h2>
+<p>A <a href="https://phootwork.github.io/api/phootwork/collection/Map.html">Map</a> is a collection of key-value pairs, where the value can be any type you want, objects included. You can think about Map
+as an associative array with super-powers.</p>
+<p>As usual, you can instantiate a new <em>Map</em> object by passing an associative array or an
+<a href="https://www.php.net/manual/en/class.iterator.php">Iterator</a> object to the constructor:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Map;
+
+$vehicles = new Map(['1 wheel' =&gt; 'unicycle', '2 wheels' =&gt; 'scooter', '4 wheels' =&gt; 'car']);
+</code></pre>
+
+<h3 id="additions">Additions</h3>
+<p>You can add one element to a Map via the <a href="https://phootwork.github.io/api/phootwork/collection/Map.html#method_set">set()</a> method, which requires
+the key as first argument and the value to add as second argument:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Map;
+
+$vehicles = new Map(['1 wheel' =&gt; 'unicycle', '2 wheels' =&gt; 'scooter', '4 wheels' =&gt; 'car']);
+
+$vehicles-&gt;set('3 wheels', 'sidecar');
+</code></pre>
+
+<p>You can add more elements via the <a href="https://phootwork.github.io/api/phootwork/collection/Map.html#method_setAll">setAll()</a> method. It expects an associative
+array or an <a href="https://www.php.net/manual/en/class.iterator.php">Iterator</a> of elements to add:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Map;
+
+$vehicles = new Map();
+
+$coll = [
+    '1 wheel' =&gt; 'unicycle',
+    '2 wheels' =&gt; 'scooter',
+    '3 wheels' =&gt; 'sidecar',
+    '4 wheels' =&gt; 'car'
+];
+
+$vehicles-&gt;setAll($coll);
+</code></pre>
+
+<h3 id="getting-the-elements">Getting the Elements</h3>
+<p>You can get an element of the collection via the <a href="https://phootwork.github.io/api/phootwork/collection/Map.html#method_get">get()</a> method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Map;
+
+$vehicles = new Map(['1 wheel' =&gt; 'unicycle', '2 wheels' =&gt; 'scooter', '4 wheels' =&gt; 'car']);
+
+$vehicles-&gt;get('4 wheels'); // return 'car'
+
+$vehicles-&gt;get('6 wheels'); // not found: return null
+</code></pre>
+
+<p>You can also get the key of an element by passing it to the <a href="https://phootwork.github.io/api/phootwork/collection/Map.html#method_getKey">getKey()</a> method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Map;
+
+$vehicles = new Map(['1 wheel' =&gt; 'unicycle', '2 wheels' =&gt; 'scooter', '4 wheels' =&gt; 'car']);
+
+$vehicles-&gt;getKey('scooter'); // return '2 wheels'
+</code></pre>
+
+<h3 id="more-methods_2">More Methods</h3>
+<p>You can find all the other Map methods in the <a href="https://phootwork.github.io/api/phootwork/collection/Map.html">documentation api</a>.</p>
+<h2 id="stack">Stack</h2>
+<p>A <a href="https://phootwork.github.io/api/phootwork/collection/Stack.html">Stack</a> is a FILO (First In Last Out) collection.</p>
+<p>As usual you can create a Stack by passing an array, or an <a href="https://www.php.net/manual/en/class.iterator.php">Iterator</a>,
+to the constructor:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Stack;
+
+$fruits = new Stack(['apple', 'pear', 'peach']);
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you deal with Stack, the order is important: the constructor pushes the elements to end of the passed array,
+so when you pop an element it results in the last of the given array.</p>
+</div>
+<h3 id="additions_1">Additions</h3>
+<p>You can add one or more elements to the Stack via the <a href="https://phootwork.github.io/api/phootwork/collection/Stack.html#method_push">push()</a> method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Stack;
+
+$fruits = new Stack(['apple', 'pear', 'peach']);
+
+$fruits-&gt;push('lemon');
+$fruits-&gt;toArray(); //['apple', 'pear', 'peach', 'lemon']
+
+$fruits-&gt;push('pine', 'banana', 'ananas');
+$fruits-&gt;toArray(); //['apple', 'pear', 'peach', 'lemon', 'pine', 'banana', 'ananas']
+</code></pre>
+
+<h3 id="peek-an-element">Peek an Element</h3>
+<p>The method <a href="https://phootwork.github.io/api/phootwork/collection/Stack.html#method_peek">peek()</a> returns the last inserted element of the collection
+but it doesn't remove it:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Stack;
+
+$fruits = new Stack(['apple', 'pear', 'peach', 'pine']);
+
+$fruits-&gt;size(); // 4
+
+$fruits-&gt;peek(); // return 'pine'
+
+$fruits-&gt;size(); // still 4
+</code></pre>
+
+<h3 id="pop-an-element">Pop an Element</h3>
+<p>Popping an element from a Stack means to retrieve the last inserted element and remove it from the collection:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Stack;
+
+$fruits = new Stack(['apple', 'pear', 'peach', 'pine']);
+
+$fruits-&gt;size(); // 4
+
+$fruits-&gt;pop(); // return 'pine'
+
+$fruits-&gt;size(); // 4
+$fruits-&gt;toArray(); // ['apple', 'pear', 'peach']
+</code></pre>
+
+<h3 id="more-methods_3">More Methods</h3>
+<p>You can find all the other Stack methods in the <a href="https://phootwork.github.io/api/phootwork/collection/Stack.html">documentation api</a>.</p>
+<h2 id="queue">Queue</h2>
+<p>A <a href="https://phootwork.github.io/api/phootwork/collection/Queue.html">Queue</a> is a FIFO (First In First Out) collection.</p>
+<p>As usual, you can create a Queue by passing an array, or an <a href="https://www.php.net/manual/en/class.iterator.php">Iterator</a>,
+to the constructor:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Queue;
+
+$fruits = new Queue(['apple', 'pear', 'peach']);
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As for the Stack collection, when you deal with Queue, the order is important: the constructor enqueues the elements,
+so when you poll an element it results in the first of the given array.</p>
+</div>
+<h3 id="additions_2">Additions</h3>
+<p>You can add one or more elements to the Queue via the <a href="https://phootwork.github.io/api/phootwork/collection/Queue.html#method_enqueue">enqueue()</a> method:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Queue;
+
+$fruits = new Queue(['apple', 'pear', 'peach']);
+
+$fruits-&gt;enqueue('lemon');
+$fruits-&gt;toArray(); //['lemon', 'apple', 'pear', 'peach']
+</code></pre>
+
+<h3 id="peek-an-element_1">Peek an Element</h3>
+<p>The <a href="https://phootwork.github.io/api/phootwork/collection/Queue.html#method_peek">peek()</a> method returns the first inserted element of the collection but
+it doesn't remove it:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Queue;
+
+$fruits = new Queue(['apple', 'pear', 'peach', 'pine']);
+
+$fruits-&gt;size(); // 4
+
+$fruits-&gt;peek(); // return 'apple'
+
+$fruits-&gt;size(); // still 4
+</code></pre>
+
+<h3 id="poll-an-element">Poll an Element</h3>
+<p>Polling an element from a Queue means to retrieve the first inserted element from the collection and remove it:</p>
+<pre><code class="php">&lt;?php declare(strict_types=1);
+use phootwork\collection\Queue;
+
+$fruits = new Queue(['apple', 'pear', 'peach', 'pine']);
+
+$fruits-&gt;size(); // 4
+
+$fruits-&gt;poll(); // return 'apple'
+
+$fruits-&gt;size(); // 3
+$fruits-&gt;toArray(); // ['pear', 'peach', 'pine']
+</code></pre>
+
+<h3 id="more-methods_4">More Methods</h3>
+<p>You can find all the other Queue methods in the <a href="https://phootwork.github.io/api/phootwork/collection/Queue.html">documentation api</a>.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Phootwork is licensed under the <a href='https://github.com/phootwork/phootwork/blob/master/LICENSE'>MIT license</a><br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

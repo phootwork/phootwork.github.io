@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Contributing - Phootwork</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Phootwork</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../collection/">Collection</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../file/">File</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../json/">Json</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../lang/">Lang</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tokenizer/">Tokenizer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../xml/">Xml</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="https://phootwork.github.io/api">Api</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../about/">About us</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docs_contributing/">Documentation Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../license/">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../about/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../docs_contributing/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/phootwork/phootwork.github.io/docs/contributing.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#phootwork-contributing-guide">Phootwork Contributing Guide</a></li>
+            <li class="second-level"><a href="#quick-start-for-experienced-programmers">Quick Start for Experienced Programmers</a></li>
+                
+            <li class="second-level"><a href="#requirements">Requirements</a></li>
+                
+            <li class="second-level"><a href="#first-step-clone-the-project-and-install-the-dependencies">First Step: Clone the Project and Install the Dependencies</a></li>
+                
+            <li class="second-level"><a href="#understanding-the-directory-structure">Understanding the Directory Structure</a></li>
+                
+            <li class="second-level"><a href="#running-the-test-suite">Running the Test Suite</a></li>
+                
+            <li class="second-level"><a href="#static-analysis-tool">Static Analysis Tool</a></li>
+                
+            <li class="second-level"><a href="#coding-standard">Coding Standard</a></li>
+                
+            <li class="second-level"><a href="#icing-on-the-cake">Icing on the Cake</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="phootwork-contributing-guide">Phootwork Contributing Guide</h1>
+<p>If you're reading this document, it is likely that you have decided to contribute to this project.
+Therefore, first of all, we want to warmly thank you! The Open Source Software grows and improves
+thanks to people like you!</p>
+<p>Contributing to a project is a process with its own rules and we try to explain them along this document.</p>
+<h2 id="quick-start-for-experienced-programmers">Quick Start for Experienced Programmers</h2>
+<ol>
+<li>Fork, clone and apply your patches. See the <a href="#understanding-the-directory-structure">directory structure</a> explanation
+if needed and don't forget to write tests.</li>
+<li>Run the test suite <code>composer test</code> and fix all red tests.</li>
+<li>Run static analysis tool (by now, we use <a href="https://psalm.dev/">Psalm</a>) <code>composer analytics</code> and fix all errors and issues.</li>
+<li>Fix the coding standard <code>composer cs-fix</code>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Tip</p>
+<p>Phootwork also provides the <strong>check</strong> command to run all the tests and analytics, required for a pull request.
+Run <code>composer check</code></p>
+</div>
+<h2 id="requirements">Requirements</h2>
+<p>To contribute to this project, you should have an good knowledge of PHP (of course) and a basic knowledge of
+<a href="https://git-scm.com/">git</a>, <a href="https://github.com/">Github</a> and the dependency manager <a href="https://getcomposer.org/">composer</a>. </p>
+<h2 id="first-step-clone-the-project-and-install-the-dependencies">First Step: Clone the Project and Install the Dependencies</h2>
+<p>The phootwork project is a collection of single libraries that can be installed separately. Anyway, all the development
+process takes place in the global repository https://github.com/phootwork/phootwork .</p>
+<p>So, the first step is to fork the <a href="https://github.com/phootwork/phootwork">phootwork repository</a> on Github and clone it
+on your local machine. If you have any doubt, please read https://help.github.com/en/articles/fork-a-repo .</p>
+<p>Then install the dependencies:</p>
+<pre><code class="bash">composer install
+</code></pre>
+
+<h2 id="understanding-the-directory-structure">Understanding the Directory Structure</h2>
+<p>After cloning and installing the dependencies, you should have a directory structure like the following:</p>
+<pre><code>   ├── bin
+   ├── src
+   │   ├── collection
+   │   ├── file
+   │   │   └── exception
+   │   ├── json
+   │   ├── lang
+   |   |   ├── inflector
+   │   │   └── parts
+   │   ├── tokenizer
+   │   └── xml
+   │       └── exception
+   ├── tests
+   │   ├── collection
+   │   │   └── fixtures
+   │   ├── file
+   │   ├── json
+   │   ├── lang
+   │   │   ├── fixtures
+   │   │   └── inflector
+   │   ├── tokenizer
+   │   │   └── fixtures
+   │   │       └── samples
+   │   └── xml
+   │       └── fixtures
+   └── vendor
+</code></pre>
+
+<p>Into the directory <code>bin</code> we have two scripts: <code>auto_split.sh</code> splits the whole Phootwork repository into the single
+library packages and <code>build_api.sh</code> generates the api documentation. You usually don't care about them, because they are
+run by our continuous integration server <a href="https://travis-ci.org">Travis ci</a>.</p>
+<p>As usual, into the directory <code>vendor</code> you can find all the libraries Phootwork depends on, both for runtime and development.</p>
+<p>The directory <code>src</code> contains the source code of our libraries and <code>tests</code> contains the relative tests.</p>
+<p>Both <code>src</code> and <code>tests</code> have sub-folders which correspond to the single libraries. E.g. you can find the source code of
+the library https://github.com/phootwork/lang into <code>src/lang</code> folder and the relative tests into <code>tests/lang</code> directory. </p>
+<h2 id="running-the-test-suite">Running the Test Suite</h2>
+<p>While developing, the test part is very important: if you apply a patch to the existing code, the test suite must run without
+errors or failures and if you add a new functionality, no one will consider it without tests.</p>
+<p>Our test tool is <a href="https://phpunit.de/">PhpUnit</a> and we provide a script to launch it:</p>
+<pre><code class="bash">composer test
+</code></pre>
+
+<p>Since our command runs phpunit binary under the hood, you can pass all phpunit options to it via the <code>--</code> operator, i.e.:</p>
+<pre><code class="bash">composer test -- --stop-on-failure
+</code></pre>
+
+<p>You can also use phpunit directly:</p>
+<pre><code>vendor/bin/phpunit
+</code></pre>
+
+<p>Each single library has its own test suite and you can launch it separately. I.e. if you want to run the <code>phootwork/lang</code>
+test suite:</p>
+<pre><code class="bash">composer test -- --testsuite lang
+</code></pre>
+
+<p>or alternatively:</p>
+<pre><code class="bash">vendor/bin/phpunit --testsuite lang
+</code></pre>
+
+<p>The last two commands can be useful to speed up the tests, if your contribution involves only one library.</p>
+<p>Phootwork also provides a command to generate a code coverage report in html format, into the <code>coverage/</code> directory:</p>
+<pre><code>composer coverage
+</code></pre>
+
+<h2 id="static-analysis-tool">Static Analysis Tool</h2>
+<p>To prevent as many bugs as possible, we use a static analysis tool called <a href="https://psalm.dev/">Psalm</a>.
+To launch it, run the following command from the root directory of Phootwork project:</p>
+<pre><code class="bash">composer analytics
+</code></pre>
+
+<p>After its analysis, Psalm outputs errors and issues with its suggestions on how to fix them. Errors are more important
+and generally more dangerous than issues, anyway you should fix both.</p>
+<h2 id="coding-standard">Coding Standard</h2>
+<p>Phootwork ships its scripts to easily fix coding standard errors, via <a href="https://cs.symfony.com/">php-cs-fixer</a> tool.
+To fix coding standard errors just run:</p>
+<pre><code class="bash">composer cs-fix
+</code></pre>
+
+<p>and to show the errors without fixing them, run:</p>
+<pre><code class="bash">composer cs
+</code></pre>
+
+<p>If you want to learn more about phootwork code style, see https://github.com/phootwork/php-cs-fixer-config.</p>
+<h2 id="icing-on-the-cake">Icing on the Cake</h2>
+<p>Phootwork provides a script to run all the previous explained commands in a single line:</p>
+<pre><code class="bash">composer check
+</code></pre>
+
+<p>It runs all the tests, analytics and code fixers needed before submitting a pull request.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Phootwork is licensed under the <a href='https://github.com/phootwork/phootwork/blob/master/LICENSE'>MIT license</a><br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

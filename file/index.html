@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>File - Phootwork</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">Phootwork</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../collection/">Collection</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">File</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../json/">Json</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../lang/">Lang</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../tokenizer/">Tokenizer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../xml/">Xml</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="https://phootwork.github.io/api">Api</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../about/">About us</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../docs_contributing/">Documentation Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../license/">License</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../collection/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../json/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/phootwork/phootwork.github.io/docs/file.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#phootwork-file">Phootwork file</a></li>
+            <li class="second-level"><a href="#installation">Installation</a></li>
+                
+            <li class="second-level"><a href="#paths">Paths</a></li>
+                
+                <li class="third-level"><a href="#building-paths">Building Paths</a></li>
+                <li class="third-level"><a href="#absolute-or-relative">Absolute or Relative?</a></li>
+                <li class="third-level"><a href="#handling-segments">Handling segments</a></li>
+                <li class="third-level"><a href="#trailing-slash">Trailing Slash?</a></li>
+                <li class="third-level"><a href="#working-with-other-paths">Working with other Paths</a></li>
+                <li class="third-level"><a href="#stream-support">Stream Support</a></li>
+            <li class="second-level"><a href="#filesystem">Filesystem</a></li>
+                
+                <li class="third-level"><a href="#operations">Operations</a></li>
+                <li class="third-level"><a href="#links">Links</a></li>
+                <li class="third-level"><a href="#attributes">Attributes</a></li>
+            <li class="second-level"><a href="#directories">Directories</a></li>
+                
+                <li class="third-level"><a href="#create-a-directory">Create a Directory</a></li>
+                <li class="third-level"><a href="#iterate-a-directory">Iterate a Directory</a></li>
+            <li class="second-level"><a href="#files">Files</a></li>
+                
+                <li class="third-level"><a href="#creating-empty-files">Creating Empty Files</a></li>
+                <li class="third-level"><a href="#reading-and-writing">Reading and Writing</a></li>
+            <li class="second-level"><a href="#testing">Testing</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="phootwork-file">Phootwork file</h1>
+<p>Photwwork <a href="https://github.com/phootwork/file">file</a> library for the local filesystem.</p>
+<ul>
+<li>Provide abstractions to the local file system</li>
+<li>Inspired by java <code>java.io.File</code></li>
+<li>Inspired by eclipse <code>org.eclipse.core.runtime.IPath</code></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Install via Composer:</p>
+<pre><code class="bash">composer require phootwork/file
+</code></pre>
+
+<h2 id="paths">Paths</h2>
+<p>Paths contain the location to files or directories. Understand various <em>paths</em> with at this given example:</p>
+<pre><code class="bash">File: /path/to/my/file.ext
+Directory: /path/to/directory
+</code></pre>
+
+<p>Contains the following <em>paths</em> for file and directory:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>File Path</th>
+<th>Directory Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dirname</td>
+<td><code>/path/to/my</code></td>
+<td><code>/path/to</code></td>
+</tr>
+<tr>
+<td>Filename</td>
+<td><code>file.ext</code></td>
+<td><code>directory</code></td>
+</tr>
+<tr>
+<td>Extension</td>
+<td><code>ext</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Pathname</td>
+<td><code>/path/to/my/file.ext</code></td>
+<td><code>/path/to/directory</code> </td>
+</tr>
+</tbody>
+</table>
+<h3 id="building-paths">Building Paths</h3>
+<p>The <code>Path</code> class helps out with all utilities to handle paths. Let's start with a base path from which we append to a locales directory and config file where we change the extension later on:</p>
+<pre><code class="php">$base = new Path('/path/to');
+$locales = $base-&gt;append('locales'); // /path/to/locales
+$config = $base-&gt;append('config.yml'); // /path/to/config.yml
+
+$config-&gt;getPathname(); // /path/to/config.yml
+$config-&gt;getFilename();  // config.yml
+$config-&gt;getDirname(); // /path/to
+$config-&gt;getExtension(); // yml
+
+$config-&gt;setExtension('json'); // /path/to/config.json
+</code></pre>
+
+<h3 id="absolute-or-relative">Absolute or Relative?</h3>
+<p>Easy checks whether a path is empty or absolute:</p>
+<pre><code class="php">$dunnoWhatPathIHaveHere = '...'; // we get this as a return from somewhere else
+
+if ($dunnoWhatPathIHaveHere-&gt;isEmpty()) {
+    // nothing to see here, go away!
+}
+
+if ($dunnoWhatPathIHaveHere-&gt;iAbsolute()) {
+    // also works on windows!
+}
+</code></pre>
+
+<h3 id="handling-segments">Handling segments</h3>
+<p>Segments are all the parts between the path delimiter <code>/</code> (even windows path are stored as unix path internally). Some convenient methods for them:</p>
+<pre><code class="php">$p = new Path('this/is/the/path/to/my/file.ext');
+
+$p-&gt;segments()-&gt;toArray(); // ['this', 'is', 'the', 'path', 'to', 'my', 'file.ext']
+$p-&gt;segmentCount(); // 7
+$p-&gt;segment(1); // is
+$p-&gt;lastSegment(); // file.ext
+$p-&gt;upToSegment(3); // this/is/the
+$p-&gt;removeFirstSegments(2); // the/path/to/my/file.ext
+$p-&gt;removeLastSegments(2); // this/is/the/path/to
+$p-&gt;upToSegment(0); // (empty string)
+</code></pre>
+
+<h3 id="trailing-slash">Trailing Slash?</h3>
+<p>Very often you need to have a trailing slash (or not). This is ugly to do with given string manipulation functions, this is covered for sure:</p>
+<pre><code class="php">$p = new Path('/path/to/folder');
+
+$p-&gt;hasTrailingSeparator(); // false
+$p-&gt;addTrailingSeparator(); // /path/to/folder/
+$p-&gt;addTrailingSeparator(); // hah! doesn't add twice here!
+$p-&gt;hasTrailingSeparator(); // true
+$p-&gt;removeTrailingSeparator(); // /path/to/folder
+$p-&gt;hasTrailingSeparator(); // false
+</code></pre>
+
+<p>Whenever you need the path with a trailing slash, call <code>$p-&gt;addTrailingSeparator()</code> which works as your "guarding operator" and you can be sure, there will be one - and only one - trailing separator add the end of your path.</p>
+<h3 id="working-with-other-paths">Working with other Paths</h3>
+<p>A quite frequent operation for paths is to work with other paths. For example is one path the parent of another how is one path relative to another one? Instead of having replace and string logic, focus on writing clean and semantic code.</p>
+<pre><code class="php">$file = new Path('this/is/the/path/to/my/file.ext');
+$parent = new Path('this/is/the');
+
+if ($parent-&gt;isPrefixOf($file)) {
+    // yup, we are
+}
+
+$file-&gt;makeRelativeTo($parent); // path/to/my/file.ext
+</code></pre>
+
+<p>It's sometimes interessting to know how much equal two paths are, here comes <code>matchingFirstSegments()</code> and <code>equals()</code>:</p>
+<pre><code class="php">$base = new Path('this/is/the/path/to/my/file.ext');
+$prefix = new Path('this/is/the');
+$anotherPath = new Path('this/is/another/path');
+
+$base-&gt;matchingFirstSegments($prefix); // 3
+$base-&gt;matchingFirstSegments($anotherPath); // 2
+$prefix-&gt;equals($base); // false
+$prefix-&gt;equals('this/is/the'); // true
+</code></pre>
+
+<h3 id="stream-support">Stream Support</h3>
+<p>All the above mentioned paths methods work with streams, here is an example:</p>
+<pre><code class="php">$stream = new Path('file:///Home/Documents');
+$stream-&gt;isAbsolute(); // true
+$stream-&gt;isStream(); // true
+</code></pre>
+
+<h2 id="filesystem">Filesystem</h2>
+<p>The <code>phootwork/file</code> package comes with two classes to access the local filesystem that share a unified and convenient API:</p>
+<ol>
+<li><code>File</code></li>
+<li><code>Directory</code></li>
+</ol>
+<p>For both scenarios, they are instantiated with the pathname or path as argument for the constructor:</p>
+<pre><code class="php">$directoryPathname = '/path/to/directory'
+$directory = new Directory($directoryPathname);
+
+$filePathname = '/path/to/file.ext';
+$file = new File($filePathname);
+
+// -- or --
+
+$directoryPath = new Path('/path/to/directory');
+$directory = new Directory($directoryPath);
+
+$filePath = new Path('/path/to/file.ext');
+$file = new File($filePath);
+</code></pre>
+
+<p>Learn more about <a href="#paths">handling path</a>.</p>
+<h3 id="operations">Operations</h3>
+<p>Main operations <em>move</em>, <em>copy</em> and <em>delete</em> are supported. Also handy, does a file exist ?</p>
+<pre><code class="php">$file = new File('hello/world.txt');
+$file-&gt;exists(); // true
+$file-&gt;move('been/there/done/that');
+$file-&gt;copy('exactly');
+$file-&gt;delete();
+</code></pre>
+
+<p>Important: <code>delete()</code> on directories works recursively!</p>
+<p>The operations onto each of those instances may vary:</p>
+<ul>
+<li>For files: <a href="#files">create, read and write</a></li>
+<li>For directories: <a href="#directories">create and iterate directories</a></li>
+</ul>
+<h3 id="links">Links</h3>
+<p>A path can point to a link or not independent whether this is a file or directory. Operations will be executed on the link target location. Creating links is not supported (yet ? - submit a PR ;-). Checking whether you are operating on one and where that will be is supported:</p>
+<pre><code class="php">$dir = new Directory('path/to/portal');
+$dir-&gt;isLink(); // true
+$dir-&gt;getLinkTarget(); // path/to/original/destination
+</code></pre>
+
+<h3 id="attributes">Attributes</h3>
+<p>A file has plenty attributes, such as the owner or the last accessed time.</p>
+<h4 id="permissions">Permissions</h4>
+<p>Permissions are relevant when you are in need changing them in order to make files writable. There are convenient checks to test some of those permissions:</p>
+<ul>
+<li><code>isReadable()</code> - to test whether it can be read</li>
+<li><code>isWritable()</code> - to test whether it can be written</li>
+<li><code>isExecutable()</code> - to test whether it can be executed</li>
+</ul>
+<p>For more details there is <code>getOwner()</code> and <code>getGroup()</code> to know whom this file belongs to and <code>setOwner()</code>, <code>setGroup()</code> and <code>setMode()</code> to change all of that.</p>
+<h4 id="timestamps">Timestamps</h4>
+<p>Timestamps for files are retrievable via <code>getCreatedAt()</code>, <code>getLastAccessedAt()</code>
+and <code>getModifiedAt()</code>. You can use <a href="#files"><code>touch()</code></a> to change them.</p>
+<h2 id="directories">Directories</h2>
+<h3 id="create-a-directory">Create a Directory</h3>
+<p>Try creating a directory and catch upon afterwards if that plan failed:</p>
+<pre><code class="php">try {
+    $dir = new Directory('/hello/there');
+    $dir-&gt;make();
+} catch (FileException $e) {
+    // oupsi
+}
+</code></pre>
+
+<p>and delete the directory later on:</p>
+<pre><code class="php">try {
+    $dir = new Directory('/hello/there');
+    $dir-&gt;delete();
+} catch (FileException $e) {
+    // nope, not gonna happen
+}
+</code></pre>
+
+<p>Important notice: <code>delete()</code> on a directory works recursively (unlink phps <code>rmdir()</code> function).</p>
+<h3 id="iterate-a-directory">Iterate a Directory</h3>
+<p>For most of the time, you want to iterate over the files within a directory - recursively or not is up to you. Let's have a look at an example:</p>
+<pre><code class="php">$files = new ArrayList();
+$folders = new ArrayList();
+$dir = new Directory('path/to/folder');
+foreach ($dir as $file) {
+    if ($file-&gt;isDot()) {
+        continue;
+    }
+
+    if ($file-&gt;isFile()) {
+        $files-&gt;add($file-&gt;toFile());
+    }
+
+    if ($file-&gt;isFolder()) {
+        $folders-&gt;add($file-&gt;toDirectory());
+    }
+}
+</code></pre>
+
+<p>The <code>$file</code> is our own <code>FileDescriptor</code>, that offers the same operations mentioned under <a href="#filesystem">Filesystem</a> plus has checks for <code>isDot()</code>, <code>isFile()</code> and <code>isDirectory()</code>. Additionally brings transforms to cast a <code>$file</code> in <a href="#files"><code>toFile()</code></a> and <a href="#directories"><code>toDirectory()</code></a>.</p>
+<h2 id="files">Files</h2>
+<h3 id="creating-empty-files">Creating Empty Files</h3>
+<p>To create empty files, just <code>touch()</code> them:</p>
+<pre><code class="php">$file-&gt;touch();
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>touch()</code> can also be used to changes <code>created</code> and <code>lastAcceessed</code> attributes.</p>
+</div>
+<h3 id="reading-and-writing">Reading and Writing</h3>
+<p>Retrieving and putting contents of and to files is straightforward using <code>read()</code> and <code>write($content)</code> methods:</p>
+<pre><code class="php">$content = $file-&gt;read();
+$content .= 'addition';
+$file-&gt;write($content);
+</code></pre>
+
+<h2 id="testing">Testing</h2>
+<p>For testing your implementations, <code>phootwork/file</code> works very nice with <a href="https://github.com/bovigo/vfsStream">mikey179/vfsStream</a>.
+Use <code>vfsStream</code> to test your own package (so does <code>phootwork/file</code>).</p>
+<p>Head over to <a href="http://vfs.bovigo.org/">vfs.bovigo.org</a> for the documentation on
+how to use <code>vfsStream</code>.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Phootwork is licensed under the <a href='https://github.com/phootwork/phootwork/blob/master/LICENSE'>MIT license</a><br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

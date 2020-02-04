@@ -8,10 +8,10 @@
     
     
     
-    <link rel="img/favicon.ico">
+    <link rel="../img/favicon.ico">
 
     
-    <title>Home - Phootwork</title>
+    <title>Documentation Contributing - Phootwork</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
     <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="css/base.min.css" rel="stylesheet">
-    <link href="css/cinder.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
 
     
 
@@ -36,7 +36,7 @@
      
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -54,7 +54,7 @@
 
             <!-- Main title -->
 
-            <a class="navbar-brand" href=".">Phootwork</a>
+            <a class="navbar-brand" href="..">Phootwork</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -63,8 +63,8 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="..">Home</a>
                     </li>
                 
                 
@@ -75,37 +75,37 @@
                         
                             
 <li >
-    <a href="collection/">Collection</a>
+    <a href="../collection/">Collection</a>
 </li>
 
                         
                             
 <li >
-    <a href="file/">File</a>
+    <a href="../file/">File</a>
 </li>
 
                         
                             
 <li >
-    <a href="json/">Json</a>
+    <a href="../json/">Json</a>
 </li>
 
                         
                             
 <li >
-    <a href="lang/">Lang</a>
+    <a href="../lang/">Lang</a>
 </li>
 
                         
                             
 <li >
-    <a href="tokenizer/">Tokenizer</a>
+    <a href="../tokenizer/">Tokenizer</a>
 </li>
 
                         
                             
 <li >
-    <a href="xml/">Xml</a>
+    <a href="../xml/">Xml</a>
 </li>
 
                         
@@ -120,31 +120,31 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="about/">About us</a>
+    <a href="../about/">About us</a>
 </li>
 
                         
                             
 <li >
-    <a href="contributing/">Contributing</a>
+    <a href="../contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Documentation Contributing</a>
 </li>
 
                         
                             
 <li >
-    <a href="docs_contributing/">Documentation Contributing</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="license/">License</a>
+    <a href="../license/">License</a>
 </li>
 
                         
@@ -160,18 +160,18 @@
                             <i class="fas fa-search"></i> Search
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../contributing/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="collection/">
+                        <a rel="next" href="../license/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/phootwork/phootwork.github.io/docs/index.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/phootwork/phootwork.github.io/docs/docs_contributing.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -183,112 +183,64 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#welcome-to-phootwork">Welcome to Phootwork!</a></li>
-            <li class="second-level"><a href="#installation">Installation</a></li>
+        <li class="first-level active"><a href="#contributing-to-the-documentation">Contributing to the Documentation</a></li>
+            <li class="second-level"><a href="#branch-strategy">Branch strategy</a></li>
                 
-            <li class="second-level"><a href="#a-little-taste">A Little Taste</a></li>
+            <li class="second-level"><a href="#clone-and-install">Clone and Install</a></li>
                 
-                <li class="third-level"><a href="#a-little-taste-of-lang-library-phootworklangtext-class">A Little Taste of lang Library (phootwork\lang\Text class);</a></li>
-                <li class="third-level"><a href="#a-little-taste-of-collection-library-phootworkcollectionstack-class">A Little Taste of collection Library (phootwork\collection\Stack class)</a></li>
+            <li class="second-level"><a href="#markdown-flavour">Markdown flavour</a></li>
+                
+                <li class="third-level"><a href="#admonition">Admonition</a></li>
+                <li class="third-level"><a href="#fontawesome">Fontawesome</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-phootwork">Welcome to Phootwork!</h1>
-<blockquote>
-<p>Many PHP functions are simply wrappers around the native C counterparts, and they do their great work since the earliest php versions.
-The time passed, the versions increased and PHP 5 and PHP 7 arrived, with their brand new object oriented heart.
-Anyway, those functions are still there and new PHP versions don't offer alternatives.</p>
-</blockquote>
-<p><a href="https://github.com/phootwork/phootwork">Phootwork <i class="fab fa-github"></i></a> is a collection of php libraries which fill these gaps in the php language and provides consistent object oriented solutions
-where the language natively offers only functions.</p>
-<p>The phootwork package includes:</p>
+<h1 id="contributing-to-the-documentation">Contributing to the Documentation  <a href="https://github.com/phootwork/phootwork.github.io"><i class="fab fa-github"></i></a></h1>
+<p>The Phootwork documentation site is written in <a href="https://daringfireball.net/projects/markdown/">markdown</a> and built
+with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+<h2 id="branch-strategy">Branch strategy</h2>
+<p>The documentation repository has two branches:</p>
 <ul>
-<li><a href="https://github.com/phootwork/collection">collection</a> a library to model several flavours of collections</li>
-<li><a href="https://github.com/phootwork/file">file</a> an object oriented library to manipulate filesystems elements (<em>stream compatible</em>)</li>
-<li><a href="https://github.com/phootwork/json">json</a> a json library, with clean syntax and proper error handling</li>
-<li><a href="https://github.com/phootwork/lang">lang</a> a library to manipulate arrays and strings in an object oriented way</li>
-<li><a href="https://github.com/phootwork/tokenizer">tokenizer</a> an easy to use tokenizer library for PHP code</li>
-<li><a href="https://github.com/phootwork/xml">xml</a> an object oriented xml utility library</li>
+<li><code>mkdocs</code> contains the markdown documentation. You should work on this branch if you want to contribute and you should
+submit here your pull requests.</li>
+<li><code>master</code> contains the site <strong>compiled</strong> by Mkdocs. This branch is handled only by our Github Actions bot.
+No pull request will be merged on it.</li>
 </ul>
-<h2 id="installation">Installation</h2>
-<p>We use <a href="https://getcomposer.org">composer</a> as dependency manager and distribution system. To install the library run:</p>
-<pre><code class="bash">composer require phootwork/phootwork
+<h2 id="clone-and-install">Clone and Install</h2>
+<ol>
+<li>Fork and clone the documentation <a href="https://github.com/phootwork/phootwork.github.io">repository</a></li>
+<li><a href="https://www.mkdocs.org/#installation">Install MkDocs</a></li>
+<li>Install <a href="https://sourcefoundry.org/cinder/">Cinder theme</a> by running: <code>pip install mkdocs-cinder</code></li>
+<li>Install <a href="http://bmcorser.github.io/fontawesome-markdown/">fontawesome-markdown</a> extension by running:
+   <code>pip install https://github.com/bmcorser/fontawesome-markdown/archive/master.zip</code></li>
+</ol>
+<h2 id="markdown-flavour">Markdown flavour</h2>
+<p>MkDocs uses <a href="https://python-markdown.github.io/">Python-Markdown</a> with some extensions active by default. It supports the
+standard markdown, markdown-extra and some of the Github-flavoured markdown features. You can find detailed information on
+<a href="https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown">https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown</a>.</p>
+<p>In Phootwork environment, we active also <a href="https://python-markdown.github.io/extensions/admonition/">admonition</a> and
+<a href="http://bmcorser.github.io/fontawesome-markdown/">fontawesome-markdown</a>.</p>
+<h3 id="admonition">Admonition</h3>
+<p><a href="https://python-markdown.github.io/extensions/admonition/">admonition</a> extension helps to write beautiful notes or
+warnings or other (see the official documentation) with a syntax like the following:</p>
+<pre><code class="bash">!!! Danger
+    Very dangerous operation!
 </code></pre>
 
-<p>Each single package can be installed separately. I.e. if you want to include in your project the <code>collection</code> library only:</p>
-<pre><code class="bash">composer require phootwork/collection
-</code></pre>
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The single library packages does not ship with tests and --dev dependencies. If you want to run the test suite or 
-contribute to the library, you have to install the whole <code>phootwork/phootwork</code> package.</p>
+<p>which translates into the following:</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Very dangerous operation!</p>
 </div>
-<h2 id="a-little-taste">A Little Taste</h2>
-<p>The following examples show what you can find in this library. You can discover much, much more by reading the documentation
-and the api.</p>
-<h3 id="a-little-taste-of-lang-library-phootworklangtext-class">A Little Taste of <em>lang</em> Library (<code>phootwork\lang\Text</code> class);</h3>
-<pre><code class="php">&lt;?php declare(strict_types=1);
-/**
- * Example describing how to manipulate a string via the Text class
- * and its nice fluent api.
- */
-use phootwork\lang\Text;
-
-$text = new Text('a beautiful string');
-
-// Remove the substring 'a ' and capitalize. Note: Text objects are *immutable*, 
-// so you should assign the result to a variable
-$text = $text-&gt;slice(2)-&gt;toCapitalCase(); // 'Beautiful string'
-
-// Capitalize each word and add an 's' character at the end of the string
-$text = $text-&gt;toCapitalCaseWords()-&gt;append('s'); // 'Beautiful Strings'
-
-// Calculate the length of the string
-$length = $text-&gt;length(); // 17
-
-// Check if the string ends with the 'ngs' substring
-$text-&gt;endsWith('ngs'); // true
+<h3 id="fontawesome">Fontawesome</h3>
+<p><a href="http://bmcorser.github.io/fontawesome-markdown/">fontawesome-markdown</a> extension allow to include
+<a href="https://fontawesome.com/">Fontawesome</a> icons in any part of the documentation, via a simple notation: <code>:icon-type icon:</code>.
+In example:</p>
+<pre><code class="bash">    _I :fas fa-heart: phootwork!_
 </code></pre>
 
-<h3 id="a-little-taste-of-collection-library-phootworkcollectionstack-class">A Little Taste of <em>collection</em> Library (<code>phootwork\collection\Stack</code> class)</h3>
-<pre><code class="php">&lt;?php declare(strict_types=1);
-/**
- * Example describing how to manipulate a Stack collection (Last In First Out)
- * via the Stack class
- */
-use phootwork\collection\Stack;
-
-$stack = new Stack(['Obiwan', 'Luke', 'Yoda', 'Leila']);
-
-// Sort the stack
-$stack = $stack-&gt;sort(); // ['Leila', 'Luke', 'Obiwan', 'Yoda']
-
-// Check if the collection contains any elements
-$stack-&gt;isEmpty();  // false
-
-// How many elements?
-$stack-&gt;size(); // 4
-
-// Push an elememt
-$stack-&gt;push('Chewbecca');
-
-// How many elements now?
-$stack-&gt;size(); // 5
-
-// Peek the head element (return the head element, without removing it)
-$stack-&gt;peek(); // 'Chewbecca'
-$stack-&gt;size(); // 5
-
-// Pop the head element
-$stack-&gt;pop(); // 'Chewbecca'
-$stack-&gt;size(); // 4: pop() removes the popped element
-</code></pre>
-
-<p><hr>
-<a class="btn btn-info btn-lg" href="https://github.com/phootwork/phootwork/issues"><i class="fab fa-github"></i><b> Any issue?</b></a>
-<a class="btn btn-info btn-lg" href="https://github.com/phootwork/phootwork.github.io/issues"><i class="fas fa-keyboard"></i><b> Found a typo?</b></a></p></div>
+<p>translates into: <em>I <i class="fas fa-heart"></i> phootwork!</em>.</p></div>
         
         
     </div>
@@ -305,12 +257,12 @@ $stack-&gt;size(); // 4: pop() removes the popped element
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
     
-    <script>var base_url = "."</script>
+    <script>var base_url = ".."</script>
     
-    <script src="js/base.js"></script>
-    <script src="search/main.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -381,8 +333,3 @@ $stack-&gt;size(); // 4: pop() removes the popped element
     </body>
 
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2020-02-04 19:00:41
--->
