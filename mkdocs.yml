@@ -1,7 +1,12 @@
 site_name: Phootwork
+site_url: https://phootwork.github.io
+site_author: Thomas Gossmann, Cristiano Cinotti
+site_description: "Phootwork is a collection of php libraries which fill gaps in the php language and provides consistent object oriented solutions"
 repo_url: https://github.com/phootwork/phootwork.github.io/
 edit_uri: "docs/"
-theme: cinder
+theme:
+  name: cinder
+  highlightjs: true
 copyright: "Phootwork is licensed under the <a href='https://github.com/phootwork/phootwork/blob/master/LICENSE'>MIT license</a>"
 markdown_extensions:
   - admonition
