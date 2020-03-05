@@ -40,7 +40,6 @@ composer install
 
 After cloning and installing the dependencies, you should have a directory structure like the following:
 ```.
-   ├── bin
    ├── src
    │   ├── collection
    │   ├── file
@@ -67,10 +66,6 @@ After cloning and installing the dependencies, you should have a directory struc
    │       └── fixtures
    └── vendor
 ```
-
-Into the directory `bin` we have two scripts: `auto_split.sh` splits the whole Phootwork repository into the single
-library packages and `build_api.sh` generates the api documentation. You usually don't care about them, because they are
-run by our continuous integration server [Travis ci](https://travis-ci.org).
 
 As usual, into the directory `vendor` you can find all the libraries Phootwork depends on, both for runtime and development.
 
