@@ -240,8 +240,7 @@ on your local machine. If you have any doubt, please read https://help.github.co
 
 <h2 id="understanding-the-directory-structure">Understanding the Directory Structure</h2>
 <p>After cloning and installing the dependencies, you should have a directory structure like the following:</p>
-<pre><code>   ├── bin
-   ├── src
+<pre><code>   ├── src
    │   ├── collection
    │   ├── file
    │   │   └── exception
@@ -268,9 +267,6 @@ on your local machine. If you have any doubt, please read https://help.github.co
    └── vendor
 </code></pre>
 
-<p>Into the directory <code>bin</code> we have two scripts: <code>auto_split.sh</code> splits the whole Phootwork repository into the single
-library packages and <code>build_api.sh</code> generates the api documentation. You usually don't care about them, because they are
-run by our continuous integration server <a href="https://travis-ci.org">Travis ci</a>.</p>
 <p>As usual, into the directory <code>vendor</code> you can find all the libraries Phootwork depends on, both for runtime and development.</p>
 <p>The directory <code>src</code> contains the source code of our libraries and <code>tests</code> contains the relative tests.</p>
 <p>Both <code>src</code> and <code>tests</code> have sub-folders which correspond to the single libraries. E.g. you can find the source code of
